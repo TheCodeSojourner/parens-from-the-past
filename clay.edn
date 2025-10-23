@@ -1,5 +1,5 @@
 {:base-source-path "notebooks"
- :base-target-path "parens-from-the-past"
+ :base-target-path "docs"
  :book {:favicon "notebooks/images/favicon.ico"}
  :clean-up-target-dir true
  :first-as-index true
@@ -7,7 +7,5 @@
  :hide-code true
  :hide-info-line true
  :hide-ui-header true
- :quarto {:format {:html {:theme "darkly"}}}
- ; :subdirs-to-sync ["notebooks"]
- }
+ :quarto {:format {:html {:theme "darkly"}}}}
   
