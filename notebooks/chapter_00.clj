@@ -1,3 +1,4 @@
+^{:kindly/hide-code true}
 (ns chapter-00
   (:require [scicloj.kindly.v4.kind :as kind]))
 

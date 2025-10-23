@@ -4,8 +4,10 @@
  :clean-up-target-dir true
  :first-as-index true
  :format [:quarto :html]
- :hide-code true
+ ; :hide-code true
+
  :hide-info-line true
  :hide-ui-header true
+ :kindly/options {:kinds-that-hide-code #{:kind/code :kind/hiccup :kind/html :kind/md}}
  :quarto {:format {:html {:theme "darkly"}}}}
   
