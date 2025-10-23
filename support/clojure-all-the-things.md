@@ -2,7 +2,7 @@ In the C++ community there's a slogan "constexpr All The Things", which expresse
 computation as far as possible.
 
 One of the goals of the cljonic-novel is to "Clojure All The Things", which expresses the idea of pushing the use of Clojure,
-including its dialects and tools (e.g., babashka, Clay, Hiccup, Calva, Joyride), as far as possible.
+including its dialects and tools (e.g., babashka, Clay, Hiccup, Calva), as far as possible.
 
 Tooling
 
