@@ -3,5 +3,5 @@ format:
   revealjs: {theme: solarized, navigation-mode: vertical, transition: slide, background-transition: fade, incremental: true}
 project: {type: book}
 book:
-  chapters: [index.qmd, cljonic_chapter_01_prologue_to_programming.qmd, cljonic_chapter_02_the_spark_of_discovery.qmd, cljonic_chapter_03_ideation_and_tensions.qmd, cljonic_chapter_04_the_clojure_connection.qmd]
+  chapters: [index.qmd, chapter_01_prologue_to_programming.qmd, chapter_02_the_spark_of_discovery.qmd, chapter_03_ideation_and_tensions.qmd, chapter_04_the_clojure_connection.qmd]
   favicon: notebooks/images/favicon.ico

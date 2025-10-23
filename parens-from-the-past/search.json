@@ -10,8 +10,8 @@
     ]
   },
   {
-    "objectID": "cljonic_chapter_01_prologue_to_programming.html",
-    "href": "cljonic_chapter_01_prologue_to_programming.html",
+    "objectID": "chapter_01_prologue_to_programming.html",
+    "href": "chapter_01_prologue_to_programming.html",
     "title": "2  Clay demo",
     "section": "",
     "text": "2.1 Setup Is Fine\nNote that Clay does not need to be required in a namespace to be used as a notebook.",
@@ -20,8 +20,8 @@
     ]
   },
   {
-    "objectID": "cljonic_chapter_01_prologue_to_programming.html#examples",
-    "href": "cljonic_chapter_01_prologue_to_programming.html#examples",
+    "objectID": "chapter_01_prologue_to_programming.html#examples",
+    "href": "chapter_01_prologue_to_programming.html#examples",
     "title": "2  Clay demo",
     "section": "2.2 Examples",
     "text": "2.2 Examples\n\n3\n\nPrologue To Programming\nhello hello hello",
@@ -30,8 +30,8 @@
     ]
   },
   {
-    "objectID": "cljonic_chapter_02_the_spark_of_discovery.html",
-    "href": "cljonic_chapter_02_the_spark_of_discovery.html",
+    "objectID": "chapter_02_the_spark_of_discovery.html",
+    "href": "chapter_02_the_spark_of_discovery.html",
     "title": "3  Chapter 2 — Getting Started",
     "section": "",
     "text": "The Spark Of Discovery\nWelcome to our book. This chapter introduces the main ideas.\nWe can embed live code examples:\n\n(map inc [1 2 3 4])\n\nAnd plot some data:",
@@ -40,8 +40,8 @@
     ]
   },
   {
-    "objectID": "cljonic_chapter_03_ideation_and_tensions.html",
-    "href": "cljonic_chapter_03_ideation_and_tensions.html",
+    "objectID": "chapter_03_ideation_and_tensions.html",
+    "href": "chapter_03_ideation_and_tensions.html",
     "title": "4  Ideation And Tensions",
     "section": "",
     "text": "Ideation And Tensions",
@@ -50,8 +50,8 @@
     ]
   },
   {
-    "objectID": "cljonic_chapter_04_the_clojure_connection.html",
-    "href": "cljonic_chapter_04_the_clojure_connection.html",
+    "objectID": "chapter_04_the_clojure_connection.html",
+    "href": "chapter_04_the_clojure_connection.html",
     "title": "5  The Clojure Connections",
     "section": "",
     "text": "The Clojure Connection",

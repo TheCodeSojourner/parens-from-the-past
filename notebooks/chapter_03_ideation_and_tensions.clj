@@ -1,4 +1,4 @@
-(ns cljonic-chapter-03-ideation-and-tensions
+(ns chapter-03-ideation-and-tensions
   (:require [scicloj.kindly.v4.kind :as kind]))
 
 ;; # Ideation And Tensions

@@ -1,9 +1,9 @@
-(ns cljonic-novel.render
+(ns novel.render
   (:require [babashka.fs :as fs]
             [scicloj.clay.v2.api :as clay]
             [scicloj.kindly.v4.kind :as kind]))
 
-(defn make-cljonic-novel []
+(defn make-novel []
   (clay/make! {:source-path (->> "notebooks"
                                  (fs/list-dir)
                                  (filter fs/regular-file?)
@@ -12,7 +12,7 @@
                                  (sort))}))
 
 (comment
-  (make-cljonic-novel)
+  (make-novel)
 
   (clay/make! {:source-path (->> "notebooks"
                                  (fs/list-dir)

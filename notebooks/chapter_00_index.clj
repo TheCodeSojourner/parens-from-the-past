@@ -1,4 +1,4 @@
-(ns cljonic-chapter-00-index
+(ns chapter-00-index
   (:require [scicloj.kindly.v4.kind :as kind]))
 
 ;; # Parens From The Past

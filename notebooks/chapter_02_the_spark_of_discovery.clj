@@ -1,4 +1,4 @@
-(ns cljonic-chapter-02-the-spark-of-discovery
+(ns chapter-02-the-spark-of-discovery
   (:require [scicloj.kindly.v4.kind :as kind]))
 
 (kind/hiccup

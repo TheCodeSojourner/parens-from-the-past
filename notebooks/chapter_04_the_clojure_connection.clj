@@ -1,4 +1,4 @@
-(ns cljonic-chapter-04-the-clojure-connection
+(ns chapter-04-the-clojure-connection
   (:require [scicloj.kindly.v4.kind :as kind]))
 
 ;; # The Clojure Connections
