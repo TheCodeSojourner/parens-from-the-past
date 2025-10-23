@@ -44,3 +44,4 @@ This setup allows the novel to be read as an interactive, web-based book, with m
 ### Tooling
 - **Calva**: A Clojure extension for VS Code, providing REPL integration and code editing support.
 - **Calva Power Tools**: Extensions enhancing Calva's capabilities for advanced Clojure development.
+- **Cline**: An AI assistant extension for VS Code, aiding in software development tasks with natural language understanding capabilities.
