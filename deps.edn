@@ -4,5 +4,8 @@
   babashka/fs {:mvn/version "RELEASE"}}
 
  :paths
- ["src" "notebooks"]}
+ ["src" "notebooks"]
+
+ :aliases
+ {:render {:exec-fn parens-from-the-past.render/make-novel :exec-args {:show false}}}}
 

@@ -3,16 +3,17 @@
             [scicloj.clay.v2.api :as clay]
             [scicloj.kindly.v4.kind :as kind]))
 
-(defn make-novel []
+(defn make-novel [{:keys [show]}]
   (clay/make! {:source-path (->> "notebooks"
                                  (fs/list-dir)
                                  (filter fs/regular-file?)
                                  (mapv fs/file-name)
                                  (filter (fn [file-name] (= "clj" (fs/extension file-name))))
-                                 (sort))}))
+                                 (sort))
+               :show show}))
 
 (comment
-  (make-novel)
+  (make-novel {:show true})
 
   (clay/make! {:source-path (->> "notebooks"
                                  (fs/list-dir)
