@@ -1,0 +1,1 @@
+the novel character named Alex is based on the author biography found in the story-bible/author.md file.

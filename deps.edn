@@ -1,0 +1,7 @@
+{:deps
+ {org.clojure/clojure {:mvn/version "RELEASE"}
+  org.scicloj/clay {:mvn/version "RELEASE"}
+  babashka/fs {:mvn/version "RELEASE"}}
+
+ :paths
+ ["src" "notebooks"]}

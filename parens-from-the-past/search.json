@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "1 Parens From The Past",
+    "section": "",
+    "text": "1 Parens From The Past\nA Laconic Odyssey\n\n\n\n\n\n\n\n\n\n\nLaconic\n\n\n/ləˈkɒnɪk/\n\n\nadjective\n\n\n\n\nUsing very few words; concise to the point of seeming mysterious or rude.\n\n\n\n\n\nParens from the Past: A Laconic Odyssey blends nonfiction narrative with factual technology history, team collaboration drama, and science fiction. It explores computer programming as a powerful mix of mathematics, philosophy, linguistics, technology, and literature, focusing on the Clojure programming language. It traces the influences of early 20th-century research in math and computer science on Rich Hickey’s creation of Clojure, and the ongoing developments of the Clojure community. It also highlights the Clojure community’s emphasis on inclusion and acceptance of diverse opinions, showcasing how the community produces code that’s beautiful, expressive, and valuable, and fosters teams that flourish and grow together.\nThe story follows a diverse remote team of programmers: Alex, a 70-year-old semi-retired software engineer; Elena, a linguist and ClojureScript expert; Raj, a math whiz enamored with clojure.core.logic; and Kai, a C++ specialist new to Clojure. Together, they develop “Cljonic,” a Clojure-inspired C++ library for embedded devices. Beginning with practical techniques like copying for persistent data, the project evolves into futuristic innovation, inspiring the invention of microcontrollers with “echo memory” enabled by “quantum transducers.”\nAmid this technical odyssey, generational and worldview tensions emerge. Alex’s faith-based outlook, shaped by decades of personal experience, and reflection on science, history, and philosophy, sparks candid discussions with the other team members, whose academic backgrounds have convinced them that an atheistic, materialistic view is the only evidence-based rational one. As mutual respect grows, these exchanges drive personal evolution, prompting deeper contemplation of hope, purpose, and the philosophical foundation of values like justice, diversity, and individual expression.\nThis novel attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity alongside respectful, meaningful dialogue.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Parens From The Past</span>"
+    ]
+  },
+  {
+    "objectID": "cljonic_chapter_01_prologue_to_programming.html",
+    "href": "cljonic_chapter_01_prologue_to_programming.html",
+    "title": "2  Clay demo",
+    "section": "",
+    "text": "2.1 Setup Is Fine\nNote that Clay does not need to be required in a namespace to be used as a notebook.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Clay demo</span>"
+    ]
+  },
+  {
+    "objectID": "cljonic_chapter_01_prologue_to_programming.html#examples",
+    "href": "cljonic_chapter_01_prologue_to_programming.html#examples",
+    "title": "2  Clay demo",
+    "section": "2.2 Examples",
+    "text": "2.2 Examples\n\n3\n\nPrologue To Programming\nhello hello hello",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Clay demo</span>"
+    ]
+  },
+  {
+    "objectID": "cljonic_chapter_02_the_spark_of_discovery.html",
+    "href": "cljonic_chapter_02_the_spark_of_discovery.html",
+    "title": "3  Chapter 2 — Getting Started",
+    "section": "",
+    "text": "The Spark Of Discovery\nWelcome to our book. This chapter introduces the main ideas.\nWe can embed live code examples:\n\n(map inc [1 2 3 4])\n\nAnd plot some data:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 2 — Getting Started</span>"
+    ]
+  },
+  {
+    "objectID": "cljonic_chapter_03_ideation_and_tensions.html",
+    "href": "cljonic_chapter_03_ideation_and_tensions.html",
+    "title": "4  Ideation And Tensions",
+    "section": "",
+    "text": "Ideation And Tensions",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ideation And Tensions</span>"
+    ]
+  },
+  {
+    "objectID": "cljonic_chapter_04_the_clojure_connection.html",
+    "href": "cljonic_chapter_04_the_clojure_connection.html",
+    "title": "5  The Clojure Connections",
+    "section": "",
+    "text": "The Clojure Connection",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Clojure Connections</span>"
+    ]
+  }
+]
