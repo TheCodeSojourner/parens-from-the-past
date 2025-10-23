@@ -1,2 +1,5 @@
 # parens-from-the-past
-A novel featuring Clojure and Cljonic
+A novel featuring Clojure and Cljonic.
+
+## Clojure
+A programming language
