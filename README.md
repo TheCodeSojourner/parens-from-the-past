@@ -1,5 +1,22 @@
 # Parens From The Past: A Laconic Odyssey
 
+<table style="width: 100%;">
+  <tr>
+    <td style="width: 50%; padding-right: 1em; text-align: center;">
+      <img src="notebooks/images/logo.png" alt="Cljonic" style="display: block; margin: 0 auto; height: 12em;">
+    </td>
+    <td style="width: 50%; padding-left: 1em; vertical-align: middle;">
+      <blockquote>
+        <div style="font-size: 2em; font-weight: bold;">Laconic</div>
+        <div>/ləˈkɒnɪk/</div>
+        <div style="font-style: italic;">adjective</div>
+        <br>
+        <div>Using very few words; concise to the point of seeming mysterious or rude.</div>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
 ## Overview
 
 **Parens from the Past: A Laconic Odyssey** is a novel that attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity alongside respectful, meaningful dialogue.
