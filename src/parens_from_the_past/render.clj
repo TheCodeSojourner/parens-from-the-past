@@ -1,4 +1,4 @@
-(ns novel.render
+(ns parens-from-the-past.render
   (:require [babashka.fs :as fs]
             [scicloj.clay.v2.api :as clay]
             [scicloj.kindly.v4.kind :as kind]))

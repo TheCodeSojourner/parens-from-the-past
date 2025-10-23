@@ -1,12 +1,12 @@
+(ns chapter-01
+  (:require [scicloj.kindly.v4.kind :as kind]))
+
 ;; # Clay demo
 
 ;; ## Setup Is Fine
 
 ;; Note that Clay does not need to be required
 ;; in a namespace to be used as a notebook.
-
-(ns chapter-01-prologue-to-programming
-  (:require [scicloj.kindly.v4.kind :as kind]))
 
 ;; ## Examples
 

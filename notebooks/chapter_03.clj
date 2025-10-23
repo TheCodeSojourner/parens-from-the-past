@@ -1,9 +1,9 @@
-(ns chapter-04-the-clojure-connection
+(ns chapter-03
   (:require [scicloj.kindly.v4.kind :as kind]))
 
-;; # The Clojure Connections
+;; # Ideation And Tensions
 
 (kind/hiccup
  [:div {:style
         {:background-color "#eeddcc"}}
-  [:p "The Clojure Connection"]])
+  [:p "Ideation And Tensions"]])
