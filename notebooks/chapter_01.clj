@@ -52,30 +52,30 @@ The mechanical engineering degree he'd earned in '79 had been his foundation, bu
 (kind/md "
 His smartphone chimed. A calendar reminder: \"Meeting with Kai, Elena, and Raj – 8:00 AM. 
 
-Alex took a sip of his coffee, black and bitter like the APL syntax he'd learned at his first job. He still remembered the thrill of implementing that embedded control program for the manufacturing machine with the IBM Series/1 minicomputer, then doing it again on a Zilog Z80. The constraints of those systems had demanded ingenuity.
+Alex took a sip of his coffee, black and bitter like the APL syntax he'd learned at his first job (e.g., `+/ (⍳5)*2`). He still remembered the thrill of implementing his own FORTH system that he used for the embedded control program for the manufacturing machine with the IBM Series/1 minicomputer, then doing it again for a Zilog Z80 single-board computer. The constraints of those systems had demanded ingenuity.
 
-That was when his colleague, the astrophysicist who had coded the control system for the multiple mirror telescope outside Tucson, had introduced him to FORTH.
+That was the time when his colleague, the astrophysicist who had coded the control system for the Multiple Mirror Telescope outside Tucson, had introduced him to FORTH.
 
-\"Threaded Interpretive Languages,\" Alex murmured, remembering the BYTE book that had changed everything. He'd implemented FORTH in assembler for both systems, and later, a meta-FORTH system for a Motorola 68000 machine.
+\"Threaded Interpretive Languages,\" Alex murmured, remembering the BYTE book that had changed everything. He'd implemented FORTH in assembler for both the IBM Series/1 minicomputer, and the Zilog Z80 single-board computer, and later, a meta-FORTH system for a Motorola 68000 machine.
 
-The FORTH systems they'd built led to a Unix-like operating system for both the IBM PC and the Amiga. That had been a time of pure creation, when possibility seemed endless and hardware constraints were just puzzles waiting to be solved.
+The meta-FORTH system they'd built led to a Unix-like operating system, written in FORTH, for both the IBM PC and the Amiga. That had been a time of pure creation, when possibility seemed endless and hardware constraints were just puzzles waiting to be solved.
 ")
 
-;; The path from FORTH to Clojure
+;; The path from FORTH to Clojure, in Clojure
 (swap! memories assoc :career-path
        [{:era "1980s",
-         :focus "FORTH, Embedded Systems, Meta-FORTH"}
+         :focus "Embedded Systems, APL, FORTH, Meta-FORTH"}
         {:era "1990s",
-         :focus "Modula-2, Ada, Pascal, Database"}
+         :focus "Modula-2, Ada, Pascal, Database Development"}
         {:era "2000s",
-         :focus "NitroSecurity, McAfee, Intel"}
+         :focus "Cyber Security Startup, Acquisition"}
         {:era "2010s",
          :focus "Clojure, C++, Scale Indicators"}
         {:era "2020s",
-         :focus "Embedded Systems, Modern C++"}])
+         :focus "Modern C++ Embedded Systems"}])
 
 (kind/md "
-Alex glanced at his career path encoded in Clojure's data structures. It was cleaner this way, more elegant than the tangled mess of reality. His journey from the Sage high-performance embedded database team at Idaho National Laboratory, through the startup that became NitroSecurity, to his time as a Principal Engineer at Intel, it all looked so logical in retrospect. Even being laid off from Intel at 60, which had felt devastating at the time, had led him back to embedded systems at the OEM company in Wisconsin that manufactured weighing equipment.
+Alex glanced at his career path encoded in Clojure's data structures. It was cleaner this way, more elegant than the tangled mess of reality. His journey from college FORTRAN, to FORTH-based embedded systems in manufacturing equipment, to high-performance embedded relational database internals, to a cyber security startup, to a Principal Engineer after acquisition, and finally to his current \"retirement job\", it all looked so logical in retrospect. Even being laid off after acquisition at 60, which had felt devastating at the time, had led him back to embedded systems at an OEM company that manufactures weighing equipment.
 
 Full circle. There was beauty in that symmetry.
 
