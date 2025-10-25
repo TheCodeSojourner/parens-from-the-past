@@ -11,23 +11,19 @@
 
 > *Princeton, 1932. In a quiet office at the mathematics department,* 
 >
-> <img alt=\"Alonzo Church\" src=\"notebooks/images/Alonzo_Church.webp\" height=\"100\"> **Alonzo Church** 
->
-> *sat at his desk, scribbling notations that would one day change the world of computation. He was developing a formal system of mathematical logic based on functions and abstractions rather than numbers and operations. The* **lambda calculus** *was being born.*
+> <img alt=\"Alonzo Church\" src=\"notebooks/images/Alonzo_Church.webp\" height=\"100\"> **Alonzo Church** *sat at his desk, scribbling notations that would one day change the world of computation. He was developing a formal system of mathematical logic based on functions and abstractions rather than numbers and operations. The* **lambda calculus** *was being born.*
 >
 > *He wrote:* `λx.x` *a simple identity function. Four symbols that capture the essence of function itself: input becomes output, cause becomes effect. Church couldn't have known that decades later, these abstractions would help shape programming languages that would power everything from space shuttles to smartphones.*
 >
 > *Twenty-five years after Church's work,* 
 >
-> <img alt=\"Alonzo Church\" src=\"notebooks/images/John-McCarthy.webp\" height=\"100\"> **John McCarthy**
->
-> *would take inspiration from the* **lambda calculus** *to create* **LISP** *, introducing parentheses as the iconic delimiter, the container that would say: within these bounds, transformation occurs.*
+> <img alt=\"John McCarthy\" src=\"notebooks/images/John-McCarthy.webp\" height=\"100\"> **John McCarthy** *would take inspiration from the* **lambda calculus** *to create* **LISP** *, introducing parentheses as the iconic delimiter, the container that would say: within these bounds, transformation occurs.*
 >
 > *And then, half a century after McCarthy,* 
 >
-> <img alt=\"Alonzo Church\" src=\"notebooks/images/rich-hickey.webp\" height=\"100\"> **Rich Hickey**
->
-> *would sit at his own desk and think: what if we made parentheses not just syntax, but semantics?*
+> <img alt=\"Rich Hickey\" src=\"notebooks/images/rich-hickey.webp\" height=\"100\"> **Rich Hickey** *would sit at his own desk and think:* 
+> 
+> *what if we made parentheses not just syntax, but semantics?*
 
 ---
 
@@ -79,9 +75,7 @@ Alex still remembered the thrill of implementing his own FORTH system, called TI
 
 That was the time when his colleague, Dave the astrophysicist who had written the PDP-11 FORTH control system for the Multiple Mirror Telescope outside Tucson, had introduced him to FORTH.
 
-<img alt=\"TIL\" src=\"notebooks/images/threaded-interpretive-languages.webp\" height=\"200\"> 
-
-\"Threaded Interpretive Languages,\" Alex murmured, remembering the BYTE book that had changed everything. He'd implemented FORTH in assembler for both the IBM Series/1 minicomputer, and the Zilog Z80 single-board computer, and later, with Dave, a meta-FORTH system for a Motorola 68000 minicomputer that could target FORTH systems for other computers.
+<img alt=\"TIL\" src=\"notebooks/images/threaded-interpretive-languages.webp\" height=\"200\"> \"Threaded Interpretive Languages,\" Alex murmured, remembering the BYTE book that had changed everything. He'd implemented FORTH in assembler for both the IBM Series/1 minicomputer, and the Zilog Z80 single-board computer, and later, with Dave, a meta-FORTH system for a Motorola 68000 minicomputer that could target FORTH systems for other computers.
 
 That meta-FORTH was used to implement a Unix-like operating system for both the IBM PC and the Amiga. That had been a time of pure creation, when possibility seemed endless and hardware constraints were just puzzles waiting to be solved.
 ")
@@ -100,15 +94,15 @@ That meta-FORTH was used to implement a Unix-like operating system for both the 
          :focus "Clojure, Modern C++, Embedded Systems"}])
 
 (kind/md "
-Alex glanced at his career path encoded in Clojure's data structures. It was cleaner this way, more elegant than the tangled mess of reality. His journey from college FORTRAN, to APL, to FORTH-based embedded systems, to high-performance embedded relational database internals, to a cyber security startup, to Principal Engineer after acquisition, and finally to his current \"retirement job\", it all looked so logical in retrospect. Even being laid off after acquisition at 60 years old, which had felt devastating at the time, had led him back to embedded systems at an OEM company that manufactures weighing equipment.
+Alex glanced at his career path encoded in Clojure's data structures. It was cleaner this way, more elegant than the tangled mess of reality. His journey from college FORTRAN, to APL, to FORTH-based embedded systems, to high-performance embedded relational database internals, to a cyber security startup, to Principal Engineer after acquisition, and finally to his current \"retirement job\", it all looked so logical in retrospect. Even being laid off at 60 years old, which had felt devastating at the time, had led him back to embedded systems at an OEM company that manufactures weighing equipment.
 
 Full circle. There was beauty in that symmetry.
 
-Alex pulled up his prototype C++ code again. It wasn't much, but it was a start. He had implemented a simple C++ persistent array, called a vector in Clojure, that avoided heap allocations and exceptions, making it suitable for embedded systems. It used copying, with C++ Return Value Optimization for performance, instead of structural sharing like Clojure, which was less efficient for large collections but perfectly reasonable for the small data sets typical in embedded applications.
+Alex pulled up his prototype C++ code again. It wasn't much, but it was a start. He had implemented a simple C++ persistent vector that avoided heap allocations and exceptions, making it suitable for embedded systems. It used copying, along with C++ Return Value Optimization (RVO) for performance, instead of structural sharing like Clojure, which was less efficient for large collections but perfectly reasonable for the small data sets typical in embedded applications.
 
 The Zoom interface loaded on his screen. Three faces appeared, each in their own quadrant: Kai in Frankfurt, Elena from her apartment in New York, and Raj connecting from Bangalore. Three decades separated Alex from the youngest of them. Three decades of technological evolution, trials and errors, raising a family, and a great deal of soul searching.
 
-\"Morning, Alex,\" Kai greeted, his German accent faint but discernible. At thirty-five, Kai was the C++ specialist, the one who understood the latest incarnation of a language that accretes features regularly. With his shaved head and forearm tattoos that peeked out from under his rolled-up sleeves, Kai looked more like a punk musician than an embedded systems developer who specialized in medical devices.
+\"Morning, Alex,\" Kai greeted, his German accent faint but discernible. At thirty-five, Kai was the C++ specialist, the one who understood the latest incarnation of a language that accretes features like a snowball rolling down a hill. With his shaved head and forearm tattoos that peeked out from under his rolled-up sleeves, Kai looked more like a punk musician than an embedded systems developer who specialized in medical devices.
 
 ---
 
@@ -185,17 +179,17 @@ Kai's eyes lit up. \"That's a great goal. Modern C++ compilers can do amazing th
 
 \"What should we implement first?\" Raj asked.
 
-\"I've started with a persistent vector,\" Alex said, \"but we should think about what other data structures we need.\"
+\"I've started with a persistent vector, otherwise called a vector in Clojure,\" Alex said, \"but we should think about what other data structures we need.\"
 
 \"Maps, definitely,\" Elena said. \"Clojure's immutable maps are incredibly useful.\"
 
 \"And some form of sequences or lazy evaluation,\" Raj added.
 
-\"Function composition and partial application would be nice,\" Kai suggested.
+\"Function composition, partial application and transducers would be nice,\" Kai suggested.
 
-Alex smiled. \"Ambitious. I like it. But let's start with the core data structures: vectors and maps. Once we have those, we can build on them.\"
+Alex smiled. \"Ambitious. I like it. But let's start with the simplest core data structures: set, string, range, repeat, and vector. Once we have those, we can build on them, and then tackle maps.\"
 
-They spent the next hour outlining the API for Cljonic's core data structures. Alex found himself energized by the collaboration, by the blend of perspectives and expertise. Kai's deep knowledge of modern C++, Elena's understanding of language design, Raj's mathematical precision, all of it complemented Alex's decades of experience in embedded systems.
+They spent the next hour outlining the API for Cljonic's core data structures. Alex found himself energized by the collaboration, by the blend of perspectives and expertise. Kai's deep knowledge of modern C++, Elena's understanding of language design, Raj's mathematical precision, all of it complemented Alex's decades of experience in embedded systems, and his autistic tendency to think outside the box.
 
 As they wrapped up, Alex shared a thought that had been brewing: \"You know, what we're doing here is more than just creating a library. We're bringing a philosophy, a way of thinking about code, to a domain that hasn't been exposed to it much. Clojure changed how I think about programming. Maybe Cljonic can do the same for embedded developers.\"
 
@@ -208,6 +202,8 @@ As they wrapped up, Alex shared a thought that had been brewing: \"You know, wha
 \"Exactly,\" Alex said. \"That's what I want to bring to the embedded world. Not just a library, but a new way of thinking.\"
 
 \"Then let's make it happen,\" Kai said, his pragmatic nature asserting itself. \"I'll start on a proper implementation of the persistent vector, incorporating the ideas we discussed.\"
+
+@@@
 
 \"I'll work on the map implementation,\" Elena offered.
 
