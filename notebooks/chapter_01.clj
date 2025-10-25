@@ -608,7 +608,7 @@ As he closed his laptop and prepared to head to his daughter's for dinner, Alex 
 
 The snow continued to fall outside, each flake a unique pattern, yet part of a greater whole. Like the parentheses in Clojure, they contained worlds within worlds, structures within structures. And like the C++ he'd been writing, they were bound by constraints that somehow made them more beautiful, not less.
 
-Alex grabbed his coat and headed out the door. The Cljonic journey was just beginning, but already it felt right. It felt like coming home.
+Alex grabbed his coat and headed out the door. The Cljonic journey was just beginning, but already it felt right. He wondered if he'd hear the same snarky critiques he had heard when he first implemented FORTH, \"I guess you're just too dumb to know you can't do that!\".
 
 ---
 
