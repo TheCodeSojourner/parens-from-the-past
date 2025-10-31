@@ -11,7 +11,7 @@
         <div>/ləˈkɒnɪk/</div>
         <div style="font-style: italic;">adjective</div>
         <br>
-        <div>Using very few words; concise to the point of seeming mysterious or rude.</div>
+        <div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div>
       </blockquote>
     </td>
   </tr>
@@ -19,13 +19,13 @@
 
 ## Overview
 
-**Parens from the Past: A Laconic Odyssey** is a novel that attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity alongside respectful, meaningful dialogue.
+**Parens from the Past: A Laconic Odyssey** is a novel that attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity in the context of respectful, meaningful dialogue.
 
 ## Technology
 
 ### Writing the Novel
 
-One of the goals of the novel is to "Clojure All The Things," which expresses the idea of pushing the use of Clojure, including its dialects and tools (e.g., babashka, Clay, Hiccup, Calva), as far as possible. This philosophy draws inspiration from the C++ community's slogan "constexpr All The Things," emphasizing maximal use of compile-time computation, adapted here to maximize Clojure's expressive power.
+One of the goals of the novel is to "**Clojure All The Things**," which expresses the idea of pushing the use of Clojure, including its dialects and tools (e.g., babashka, Clay, Hiccup, Calva), as far as possible. This philosophy draws inspiration from the C++ community's slogan "**constexpr All The Things**," emphasizing maximal use of compile-time computation, adapted here to connote the idea of maximizing Clojure's expressive power.
 
 The novel is authored using **Clojure**, a functional programming language known for its laconic nature. It employs a **literate programming** approach, pioneered by Donald Knuth, where narrative text and code are interwoven seamlessly in notebook files.
 
@@ -36,12 +36,13 @@ The notebooks are rendered into a static website using **Quarto**, a multi-forma
 
 - **Clay Configuration** (`clay.edn`): 
   - Processes notebooks from `notebooks/` into Quarto Markdown (`.qmd`) files.
-  - Outputs HTML to the `parens-from-the-past/` directory.
+  - Outputs HTML to the `docs/` directory.
   - Features: Hides code blocks by default for a narrative focus.
 
-This setup allows the novel to be read as an interactive, web-based book, with multiple chapters each generating corresponding `.html` files. The rendering emphasizes readability while preserving the educational and philosophical essence of the content.
+This configuration allows the novel to be read as an interactive, web-based book, with multiple chapters each generating corresponding `.html` files. The rendering emphasizes readability while preserving the educational and philosophical essence of the content.
 
 ### Tooling
+- **Babashka**: A fast-starting, scripting-oriented Clojure dialect designed for command-line and automation tasks without requiring the JVM.
 - **Calva**: A Clojure extension for VS Code, providing REPL integration and code editing support.
 - **Calva Power Tools**: Extensions enhancing Calva's capabilities for advanced Clojure development.
 - **Cline**: An AI assistant extension for VS Code, aiding in software development tasks with natural language understanding capabilities.
