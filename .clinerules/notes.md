@@ -469,4 +469,12 @@ https://github.com/ClojureCivitas/clojurecivitas.github.io/blob/main/src/scicloj
 https://clojurecivitas.github.io/scicloj/clay/workshop/macroexpand2025.html
 https://github.com/scicloj/clay/blob/main/src/scicloj/clay/v2/snippets.clj
 
+Alex's early career experience of being "to ignorant to know you can't do that"
 
+We need a Physicist on the team
+
+Quantum Transducers allow Echo Memory to implement bit-level dynamic memory and garbage collection with hardware speeds
+
+what would you say are the big questions of philosophy
+
+Please write at a fog index level of 14

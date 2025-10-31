@@ -9,17 +9,17 @@
 
 ---
 
-> *Princeton, 1932. In a quiet office at the mathematics department,* 
+> *Princeton University, 1932. In a quiet office in the mathematics department,* 
 >
 > <img alt=\"Alonzo Church\" src=\"notebooks/images/Alonzo_Church.webp\" height=\"100\"> **Alonzo Church** *sat at his desk, scribbling notations that would one day change the world of computation. He was developing a formal system of mathematical logic based on functions and abstractions rather than numbers and operations. The* **lambda calculus** *was being born.*
 >
 > *He wrote:* `λx.x` *a simple identity function. Four symbols that capture the essence of function itself: input becomes output, cause becomes effect. Church couldn't have known that decades later, these abstractions would help shape programming languages that would power everything from space shuttles to smartphones.*
 >
-> *Twenty-five years after Church's work,* 
+> *Twenty-six years after Church's work, at the Massachusetts Institute of Technology,* 
 >
 > <img alt=\"John McCarthy\" src=\"notebooks/images/John-McCarthy.webp\" height=\"100\"> **John McCarthy** *would take inspiration from the* **lambda calculus** *to create* **LISP** *, introducing parentheses as the iconic delimiter, the container that would say: within these bounds, transformation occurs.*
 >
-> *And then, half a century after McCarthy,* 
+> *And then, about half a century after McCarthy,* 
 >
 > <img alt=\"Rich Hickey\" src=\"notebooks/images/rich-hickey.webp\" height=\"100\"> **Rich Hickey** *would sit at his own desk and think:* 
 > 
