@@ -1,7 +1,0 @@
-format:
-  html: {toc: true, toc-depth: 4, theme: darkly}
-  revealjs: {theme: solarized, navigation-mode: vertical, transition: slide, background-transition: fade, incremental: true}
-project: {type: book}
-book:
-  chapters: [index.qmd, chapter_00.qmd]
-  favicon: notebooks/images/favicon.ico
