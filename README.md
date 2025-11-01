@@ -3,7 +3,7 @@
 <table style="width: 100%;">
   <tr>
     <td style="width: 50%; padding-right: 1em; text-align: center;">
-      <img src="notebooks/images/logo.png" alt="Cljonic" style="display: block; margin: 0 auto; height: 12em;">
+      <img src="notebooks/images/logo.webp" alt="Cljonic" style="display: block; margin: 0 auto; height: 12em;">
     </td>
     <td style="width: 50%; padding-left: 1em; vertical-align: middle;">
       <blockquote>
@@ -37,7 +37,7 @@ The notebooks are rendered into a static website using **Quarto**, a multi-forma
 - **Clay Configuration** (`clay.edn`): 
   - Processes notebooks from `notebooks/` into Quarto Markdown (`.qmd`) files.
   - Outputs HTML to the `docs/` directory.
-  - Features: Hides code blocks by default for a narrative focus.
+  - Features: Hides most code blocks by default for a narrative focus.
 
 This configuration allows the novel to be read as an interactive, web-based book, with multiple chapters each generating corresponding `.html` files. The rendering emphasizes readability while preserving the educational and philosophical essence of the content.
 
