@@ -19,7 +19,11 @@
 
 ## Overview
 
-**Parens from the Past: A Laconic Odyssey** is a novel that attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity in the context of respectful, meaningful dialogue.
+**Parens from the Past: A Laconic Odyssey** is a reality-based science fiction novel that introduces the reader to the world of computer programming, illustrates the creative possibilities of computer programming as a medium of expression, and inspires the reader to investigate computer programming further and create their own expressions. The novel attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity in the context of respectful, meaningful dialogue.
+
+It's perspective on computer programming is:
+
+Programming is the art of telling a machine what to do in a language that is simultaneously a mathematical proof, a philosophical argument, a linguistic utterance, an engineered artifact, and a story worth reading.
 
 ## Technology
 
