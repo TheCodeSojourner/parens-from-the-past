@@ -19,11 +19,11 @@
 
 ## Overview
 
-**Parens from the Past: A Laconic Odyssey** is a reality-based science fiction novel that introduces the reader to the world of computer programming, illustrates the creative possibilities of computer programming as a medium of expression, and inspires the reader to investigate computer programming further and create their own expressions. The novel attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity in the context of respectful, meaningful dialogue.
+**Parens from the Past: A Laconic Odyssey** is a reality-based science fiction novel that introduces the reader to the world of computer programming, illustrates the creative possibilities of computer programming as a medium of expression, and inspires the reader to investigate computer programming further and create their own expressions. The novel attempts to demystify programming in general, encourages readers to experiment with the Clojure programming language, and celebrates human creativity in the context of respectful, meaningful dialogue.
 
 It's perspective on computer programming is:
 
-Programming is the art of telling a machine what to do in a language that is simultaneously a mathematical proof, a philosophical argument, a linguistic utterance, an engineered artifact, and a story worth reading.
+*Programming is the art of telling a machine what to do in a language that is simultaneously a mathematical specification, a philosophical argument, a linguistic utterance, an engineered artifact, and a story worth reading.*
 
 ## Technology
 
@@ -41,12 +41,11 @@ The notebooks are rendered into a static website using **Quarto**, a multi-forma
 - **Clay Configuration** (`clay.edn`): 
   - Processes notebooks from `notebooks/` into Quarto Markdown (`.qmd`) files.
   - Outputs HTML to the `docs/` directory.
-  - Features: Hides most code blocks by default for a narrative focus.
 
 This configuration allows the novel to be read as an interactive, web-based book, with multiple chapters each generating corresponding `.html` files. The rendering emphasizes readability while preserving the educational and philosophical essence of the content.
 
 ### Tooling
-- **Babashka**: A fast-starting, scripting-oriented Clojure dialect designed for command-line and automation tasks without requiring the JVM.
+- **Babashka**: Fast-starting, script-oriented Clojure dialect designed for command-line and automation tasks without requiring the JVM.
 - **Calva**: A Clojure extension for VS Code, providing REPL integration and code editing support.
 - **Calva Power Tools**: Extensions enhancing Calva's capabilities for advanced Clojure development.
 - **Cline**: An AI assistant extension for VS Code, aiding in software development tasks with natural language understanding capabilities.
