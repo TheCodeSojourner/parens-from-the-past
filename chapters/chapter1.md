@@ -1,10 +1,5 @@
 # Chapter 1 – The Wet Lambda
 
-* need to introduce REPL early, when the HP desktop computer is introduced
-* Alex's initial description of cljonic is misunderstood by Elana
-* Alex has not implemented full blown Clojure persistent data structures
-* Alex is pragmatic, starting with a simple copy-on-write placeholder implementation
-
 **Vignette: The Identity That Refused to Change**  
 
 Princeton University, 1934. The mathematics department was quiet except for the scratching of a pencil and the occasional rustle of paper. Outside, the Gothic spires threw long shadows across the quad as afternoon light slanted through leaded glass windows into the cramped office where Alonzo Church sat hunched over his desk.
@@ -120,7 +115,7 @@ Alex had spent nearly two hours walking through the exhibit, reading every plaqu
 
 The exhibit culminated in speculation about the future of computation, quantum computing, biological computing, and other frontiers. But it was here, to the lambda, that Alex kept returning. The beginning. The foundation. The identity function that had started it all.
 
-Alex traced his left index finger over the burn scar on his palm, a souvenir from his first real encounter with interactive programming, a 1979 HP desktop computer with a pen plotter. He had used this system for his two dimensional heat transfer senior project as a Mechanical Engineering student. The machine had taught him that programming wasn't just about writing code; it was about conversation. Computer and programmer engaged in an ongoing dialog, each response informing the next prompt. That burn had been a literal reminder: interfaces had consequences.
+Alex traced his left index finger over the burn scar on his palm, a souvenir from his first real encounter with interactive Read-Evaluate-Print-Loop (REPL) programming, a 1979 HP desktop computer with a pen plotter. He had used this system for his two dimensional isotherm heat transfer senior project as a Mechanical Engineering student. The machine had taught him that programming wasn't just about writing code; it was about conversation. Computer and programmer engaged in an ongoing dialog, each response informing the next prompt. That burn had been a literal reminder: interfaces had consequences.
 
 Seventy years old now. Faded navy flannel shirt with sleeves rolled once, the same way he'd worn them since 1979. A silver cross on a thin chain, hidden beneath his shirt, that had survived three decades of conference lanyards. He could see his reflection in the polished metal of the sculpture: silver hair in a practical ponytail, time-earned lines around his eyes, the faint smile of someone who'd spent most of his life trying to explain complex ideas to people who weren't ready for them.
 
