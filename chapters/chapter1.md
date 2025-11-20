@@ -62,13 +62,11 @@ It was the kind of idea that terrified most embedded developers. Sacred cows mad
 
 But conventional wisdom had rarely accounted for someone like Alex, a programmer who had lived long enough to see the full lifecycle of multiple programming paradigms. He'd implemented the FORTH programming language on Z80 chips in the 1980s, written embedded C in the 1990s, seen Java try and fail to conquer the world in the 2000s, and watched as microcontrollers grew more powerful as the programming models remained stubbornly unchanged.
 
-The turning point had come while working on firmware for industrial scale indicators in 2016. The codebase had grown to over 100,000 lines of C++, filled with objects, global variables and complex state management. Seemingly minor bugs could caused weight readings to occasionally drift by a few milligrams, enough to cause regulatory compliance issues but rare enough to be nearly impossible to reproduce or debug.
-
-After weeks of desperate debugging, he'd finally isolated the cause: a race condition between the weight sampling routine and the display update function. The bug had existed for years in the legacy codebase but only manifested when certain timing conditions were met. This had cost the company in significant certification delays, and product shipments.
+The final catalyst had been a 100,000-line legacy C++ firmware codebase for an industrial scale in 2016. It was filled with objects, global variables and complex state management. A subtle race condition, buried deep in the code, sporadically corrupted weight readings, costing the company dearly in certification delays and held shipments. After weeks of debugging a ghost, he'd finally cornered it.
 
 "There has to be a better way," he'd thought. And that's when he'd first considered bringing Clojure's ideas, immutability, pure functions, and clear separation of state and identity, to the embedded world.
 
-How many times had he heard the refrain "I guess you're to stupid to know you can't do that!". Conventional wisdom had been wrong before.
+How many times had he heard the refrain "I guess you're too stupid to know you can't do that!". Conventional wisdom had been wrong before.
 
 A voice beside him, low and amused, Hamburg accent thick enough to spread on rye bread, interrupted his thoughts.
 
@@ -314,7 +312,7 @@ She thought of the silver cross she'd glimpsed on his chain. Religious, she thou
 
 And yet there was something about Alex that didn't fit the stereotype. He wasn't preachy or dogmatic. When she'd made the "sky-daddy" jab, he hadn't reacted with offense or attacked with apologetics.
 
-Instead, he'd talked about persistence. About history that refused to be erased.
+Instead, he'd talked about persistence. About history that refused to be erased. It was unnerving. He didn't fit the stereotype she had ready for him. Maybe, just maybe, he wasn't just a collection of legacy bugs after all.
 
 Elena's fingers tapped a quick rhythm on her laptop, a habit from her teenage coding days. Maybe he is different. More like Clojure itself, quiet, consistent, built on careful research, first principles, iteration, immutability and transformations.
 
