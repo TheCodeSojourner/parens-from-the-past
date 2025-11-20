@@ -11,7 +11,7 @@
         <div>/ləˈkɒnɪk/</div>
         <div style="font-style: italic;">adjective</div>
         <br>
-        <div>Using very few words; concise to the point of seeming mysterious or rude.</div>
+        <div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div>
       </blockquote>
     </td>
   </tr>
