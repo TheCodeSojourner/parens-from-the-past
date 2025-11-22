@@ -157,7 +157,7 @@ Elena's expression had lost its edge of mockery, replaced by something harder to
 
 \"Rich has a gift for clarity,\" Alex agreed. \"He put words to problems I'd been struggling with since my punch-card days.\"
 
-Elena suddenly laughed, bright, sudden and unstoppable, the kind of laugh that makes strangers turn and smile without knowing why. It filled the space beneath the sculpture, bouncing off the bronze and glass.
+Elena laughed, bright, sudden and unstoppable, the kind of laugh that makes strangers turn and smile without knowing why. It filled the space beneath the sculpture, bouncing off the bronze and glass.
 
 \"I just realized who you are,\" she said. \"You're the guy who did that Clojure implementation for cloud-based scale indicators! I used your transducer library for a warehousing project in Leipzig in 2016.\"
 
