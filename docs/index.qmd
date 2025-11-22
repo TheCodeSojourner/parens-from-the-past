@@ -41,7 +41,7 @@ Together, they develop **Cljonic** (/klə-jŏn'ĭk/), a Clojure-inspired C++ lib
 
 Amid this technical odyssey from science fact to science fiction, generational and worldview tensions arise. Alex's faith-based perspective, shaped by decades of research, experience, and reflection on science, history, and philosophy, occasionally sparks candid, respectful, and succinct discussions with the other team members, often prompted by their initially snarky jabs at him. Their personal and academic backgrounds, combined with assumptions about Alex's beliefs, lead them to see their atheistic, materialistic perspective as the only rational worldview. Guided by the core values of the Clojure community, mutual appreciation for diverse perspectives gradually develops within the team, and these exchanges foster personal growth, prompting deeper reflection on hope, purpose, and the philosophical foundations of values such as justice, diversity, respect, and individual expression.
   
-This novel demystifies programming, encourages readers to explore Clojure, and celebrates human creativity through respectful and meaningful dialogue.
+This novel seeks to demystify programming and encourage readers to explore Clojure, and celebrates human creativity through respectful and meaningful dialogue.
 
  > *To all the mathematicians, scientists, programmers, managers, teachers, family members, and friends who have inspired, mentored, supported, and encouraged me throughout my career.*
 
