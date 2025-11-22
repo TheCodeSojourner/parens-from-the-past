@@ -73,7 +73,7 @@ He'd worked on embedded systems since the early days of his career. While much o
 
 \"One last attempt to add value before I'm obsolete,\" he'd written in an email to himself last month. \"Clojure on the metal, no heap, no exceptions, pure conversation.\"
 
-It was a mission statement as much as a technical goal. Alex had watched programming languages come, go and change over his lifetime. He'd seen FORTRAN, BASIC, APL and FORTH give way to C, {{cpp}}, Java and {{C#}}, then JavaScript and Python. He'd watched object-oriented programming rise to dominance, only to be challenged by more mathematically sound functional approaches. Through it all, embedded C and {{cpp}} had remained an industry defacto standard.
+It was a mission statement as much as a technical goal. Alex had watched programming languages come, go and change over his lifetime. He'd seen FORTRAN, BASIC, APL and FORTH give way to C, {{cpp}}, Java and {{c#}}, then JavaScript and Python. He'd watched object-oriented programming rise to dominance, only to be challenged by more mathematically sound functional approaches. Through it all, embedded C and {{cpp}} had remained an industry defacto standard.
 
 But defacto standards often meant stagnation. The same design patterns, the same pitfalls, the same bugs had been plaguing embedded systems for decades, and object-orientation hadn't helped much. Memory corruption. Race conditions. Buffer overflows. State management nightmares. Complicated programming languages in a constant state of flux that no working programmer had the time to master. The constraints of the environment had become excuses for avoiding better approaches.
 
