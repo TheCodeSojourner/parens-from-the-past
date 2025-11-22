@@ -7,11 +7,6 @@
 (kind/hiccup
  [:h1 "A Laconic Odyssey"])
 
-(kind/md
- "> *To all the mathematicians, scientists, computer programmers, managers, family members, and friends who have inspired, mentored, helped, and encouraged me throughout my career.*
-
-> *A special thanks to Rich Hickey and the entire Clojure community for their astounding accomplishments and their commitment to inclusivity.*")
-
 (kind/hiccup
  [:table {:style {:width "100%;"}}
   [:tr
@@ -28,18 +23,22 @@
 
 (kind/md
  "
-**Parens from the Past: A Laconic Odyssey** blends nonfiction narrative with factual technology history, dramatic team collaboration, and science fiction. It explores computer programming as a powerful mix of mathematics, philosophy, linguistics, technology, and literature, focusing on the Clojure programming language. It traces the influences of early 20th-century research in mathematics and computer science on Rich Hickey's creation of Clojure, and the ongoing growth and developments of the Clojure community. It also highlights the Clojure community's emphasis on inclusion and acceptance of diverse opinions, showcasing how the community produces code that's beautiful, expressive, and valuable, and fosters teams that flourish and grow together.
+**Parens From The Past: A Laconic Odyssey** explores the ideas that shaped modern computer programming, from early breakthroughs in mathematics and computer science to the creation of the Clojure language and the vibrant community it inspired, and on to imaginative discoveries in physics and electronics. Blending narrative, history, and inspiration, it reveals a world where thoughtful dialogue, diverse voices, and enduring code drive progress. This is a story about how ideas travel, how communities grow, and how great software and hardware emerge when people are free to learn, collaborate, and flourish together.
 
-The story follows a diverse team of makers/programmers: 
+The story follows a diverse team of makers and programmers: 
   
-* Alex, a 70-year-old semi-retired Clojure software engineer; 
-* Elena, a linguist, and programmer familiar with Babashka, a Clojure scripting engine, and ClojureScript, a Clojure to JavaScript generator; 
-* Raj, a quantum physicist with minimal Clojure experience; 
-* and Kai, an embedded C++ specialist new to Clojure. 
+* **Alex**, a 70-year-old semi-retired Clojure software engineer. 
+* **Elena**, a linguist and programmer experienced with Babashka, a Clojure scripting engine, and ClojureScript, a Clojure-to-JavaScript compiler. 
+* **Raj**, a quantum physicist with limited experience in Clojure. 
+* **Kai**, an embedded C++ specialist who is new to Clojure.
   
-Together, they develop \"Cljonic,\" a Clojure-inspired C++ library for embedded systems development. Following Clojure's lead, they begin with pragmatic techniques like a copy-on-write implementation of Clojure's persistent data structures. From there, Cljonic evolves into futuristic innovation, inspiring the invention of microcontrollers with \"echo memory\" enabled by Raj's new Physics discovery called \"quantum transducers.\"
+Together, they develop **Cljonic** (/klə-jŏn'ĭk/), a Clojure-inspired C++ library for embedded systems. Following Clojure's lead, they begin with pragmatic techniques, such as a copy-on-write implementation of Clojure's persistent data structures. From there, **Cljonic** evolves into a platform for futuristic innovation, inspiring the creation of microcontrollers with **echo memory**, made possible by Raj's groundbreaking discovery in physics, which he calls **quantum transducers**.
 
-Amid this technical odyssey, generational and worldview tensions emerge. Alex's faith-based outlook, shaped by decades of personal experience, and reflection on science, history, and philosophy, sparks candid, but succinct, discussions with the other team members, whose academic backgrounds, and misconceptions about Alex's faith, have convinced them that an atheistic, materialistic perspective is the only rational worldview. As mutual respect grows, these exchanges drive personal evolution, prompting deeper contemplation of hope, purpose, and the philosophical foundation of values like justice, diversity, and individual expression.
+Amid this technical odyssey from science fact to science fiction, generational and worldview tensions arise. Alex's faith-based perspective, shaped by decades of research, experience, and reflection on science, history, and philosophy, occasionally sparks candid, respectful, and succinct discussions with the other team members, often prompted by their initially snarky jabs at him. Their personal and academic backgrounds, combined with assumptions about Alex's beliefs, lead them to see their atheistic, materialistic perspective as the only rational worldview. Guided by the core values of the Clojure community, mutual appreciation for diverse perspectives gradually develops within the team, and these exchanges foster personal growth, prompting deeper reflection on hope, purpose, and the philosophical foundations of values such as justice, diversity, respect, and individual expression.
+  
+This novel demystifies programming, encourages readers to explore Clojure, and celebrates human creativity through respectful and meaningful dialogue.
 
-This novel attempts to demystify programming in general, encourages readers to experiment with Clojure, and celebrates human creativity in the context of respectful, meaningful dialogue.
-  ")
+ > *To all the mathematicians, scientists, programmers, managers, teachers, family members, and friends who have inspired, mentored, supported, and encouraged me throughout my career.*
+
+> *Special thanks to Rich Hickey, the Clojure core team, and the entire Clojure community for their remarkable accomplishments and their steadfast commitment to respect, inclusivity, and kindness.*  
+")

@@ -1,17 +1,26 @@
-^{:kindly/hide-code true}
-(ns chapter-01
-  (:require [parens-from-the-past.alias :refer [alias-expand]]
-            [scicloj.kindly.v4.api :as kindly]
-            [scicloj.kindly.v4.kind :as kind]))
+---
+format:
+  html: {toc: true, toc-depth: 4, theme: darkly}
 
-;; ## The Wet Lambda
+---
+<style></style><style>.printedClojure .sourceCode {
+  background-color: transparent;
+  border-style: none;
+}
+</style><style>.clay-limit-image-width .clay-image {max-width: 100%}
+.clay-side-by-side .sourceCode {margin: 0}
+.clay-side-by-side {margin: 1em 0}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
 
-(kind/md (alias-expand "
+## The Wet Lambda
+
+
 <br>
           
 > Princeton University, 1936. Rain tapped against the leaded glass windows of the mathematics department as
 > 
-> <img alt=\"Alonzo Church\" src=\"notebooks/images/Alonzo_Church.webp\" height=\"100\"> **Alonzo Church**
+> <img alt="Alonzo Church" src="notebooks/images/Alonzo_Church.webp" height="100"> **Alonzo Church**
 >
 > hunched over his desk. A half-empty cup of cold coffee sat forgotten beside his notes. In the quiet sanctuary of his office, protected from both the literal storm outside and the metaphorical one of the Great Depression beyond campus, Church scratched his pencil across the page and paused.
 > 
@@ -25,13 +34,13 @@
 >
 > Twenty-two years later, 
 >
-> <img alt=\"John McCarthy\" src=\"notebooks/images/John-McCarthy.webp\" height=\"100\"> **John McCarthy**
+> <img alt="John McCarthy" src="notebooks/images/John-McCarthy.webp" height="100"> **John McCarthy**
 >
 > would build on this foundation to create the LISP programming language, introducing parentheses as delimiters for transformations. 
 >
 > And another half-century after that, 
 >
-> <img alt=\"Rich Hickey\" src=\"notebooks/images/rich-hickey.webp\" height=\"100\"> **Rich Hickey** 
+> <img alt="Rich Hickey" src="notebooks/images/rich-hickey.webp" height="100"> **Rich Hickey** 
 >
 > would extend these ideas into Clojure, a programming language where data structures themselves became persistent and immutable.
 > 
@@ -51,9 +60,9 @@ The sculpture itself was impressive, a perfect representation of the Greek lette
 
 This visit to Mathematikum hadn't been planned. Not exactly. It had started as a simple vacation to visit his grandfather's homeland, the one indulgence he was allowing himself before diving back into work. But after three days in Frankfurt, the museum's advertisement for a special exhibit on computational theory had caught his eye in the train station. A bronze lambda sculpture, the sign said.
 
-`\"Sometimes symbols were also signposts\"`
+`"Sometimes symbols were also signposts"`
 
-The exhibit was titled \"From Church to Cloud: Nine Decades of Computational Theory And Practice,\" and traced the evolution of computer science from its mathematical foundations through to modern distributed systems. The lambda sculpture formed its centerpiece, a physical manifestation of the abstract concept that had launched it all.
+The exhibit was titled "From Church to Cloud: Nine Decades of Computational Theory And Practice," and traced the evolution of computer science from its mathematical foundations through to modern distributed systems. The lambda sculpture formed its centerpiece, a physical manifestation of the abstract concept that had launched it all.
 
 Alex had spent nearly two hours walking through the exhibit, reading every plaque, studying every diagram. He'd lingered longest at the displays on LISP and Clojure, nodding occasionally at particularly insightful quotes from McCarthy and Hickey. It felt like visiting old friends, these were the ideas that had shaped his career and, in many ways, his worldview.
 
@@ -65,190 +74,196 @@ Seventy years old now. Faded navy flannel shirt with sleeves rolled once, the sa
 
 He had flown to Frankfurt from Idaho the night before, carrying nothing but a PinePhone Pro in its handmade leather case (stitched in Rice Lake, Wisconsin), a ten year old Asus fanless laptop, a notebook bound in duct tape. And a quiet certainty that this would be his last big idea.
 
-The notebook contained ideas for a Clojure-inspired {{cpp}} library for embedded systems, a concept he'd been refining for quite some time. A gift from Clojure to the embedded development world: the power of immutable data and functional programming without the overhead of garbage collection, heap management or exceptions, brought to the constrained environment of microcontrollers.
+The notebook contained ideas for a Clojure-inspired <span style="white-space: nowrap;">C++</span> library for embedded systems, a concept he'd been refining for quite some time. A gift from Clojure to the embedded development world: the power of immutable data and functional programming without the overhead of garbage collection, heap management or exceptions, brought to the constrained environment of microcontrollers.
 
-The notebook itself was a testament to his working style. Each page a careful mix of {{cpp}} code fragments, memory layouts drawn with mechanical precision, and the occasional philosophical note in the margins. His handwriting had remained unchanged for fifty years, neat engineer's lettering, with critical calculations circled and underlined. Several pages showed the progression of his thinking about the core data structures: first attempts, cross-outs, refinements, and finally the hopefully elegant solution he'd arrived at just last month.
+The notebook itself was a testament to his working style. Each page a careful mix of <span style="white-space: nowrap;">C++</span> code fragments, memory layouts drawn with mechanical precision, and the occasional philosophical note in the margins. His handwriting had remained unchanged for fifty years, neat engineer's lettering, with critical calculations circled and underlined. Several pages showed the progression of his thinking about the core data structures: first attempts, cross-outs, refinements, and finally the hopefully elegant solution he'd arrived at just last month.
 
 He'd worked on embedded systems since the early days of his career. While much of the computing world had moved to increasingly abstract layers, microcontrollers still operated close to the metal, resource-constrained, real-time systems where every memory byte and CPU cycle mattered. Scale indicators, industrial controllers, medical devices, these were part of his world, a world where software wasn't just ones and zeros but directly controlled physical reality.
 
-\"One last attempt to add value before I'm obsolete,\" he'd written in an email to himself last month. \"Clojure on the metal, no heap, no exceptions, pure conversation.\"
+"One last attempt to add value before I'm obsolete," he'd written in an email to himself last month. "Clojure on the metal, no heap, no exceptions, pure conversation."
 
-It was a mission statement as much as a technical goal. Alex had watched programming languages come, go and change over his lifetime. He'd seen FORTRAN, BASIC, APL and FORTH give way to C, {{cpp}}, Java and {{C#}}, then JavaScript and Python. He'd watched object-oriented programming rise to dominance, only to be challenged by more mathematically sound functional approaches. Through it all, embedded C and {{cpp}} had remained an industry defacto standard.
+It was a mission statement as much as a technical goal. Alex had watched programming languages come, go and change over his lifetime. He'd seen FORTRAN, BASIC, APL and FORTH give way to C, <span style="white-space: nowrap;">C++</span>, Java and {{C#}}, then JavaScript and Python. He'd watched object-oriented programming rise to dominance, only to be challenged by more mathematically sound functional approaches. Through it all, embedded C and <span style="white-space: nowrap;">C++</span> had remained an industry defacto standard.
 
 But defacto standards often meant stagnation. The same design patterns, the same pitfalls, the same bugs had been plaguing embedded systems for decades, and object-orientation hadn't helped much. Memory corruption. Race conditions. Buffer overflows. State management nightmares. Complicated programming languages in a constant state of flux that no working programmer had the time to master. The constraints of the environment had become excuses for avoiding better approaches.
 
-It was the kind of idea that terrified most embedded developers. Sacred cows made the best burgers, but nobody wanted to be the butcher. \"Don't fix it if it ain't broke\" was the mantra. Mutability was supposed to be essential for performance on constrained devices. Memory management needed to be manual, if present at all. When every byte and every cycle counted, functional programming was a luxury. Or so conventional wisdom claimed.
+It was the kind of idea that terrified most embedded developers. Sacred cows made the best burgers, but nobody wanted to be the butcher. "Don't fix it if it ain't broke" was the mantra. Mutability was supposed to be essential for performance on constrained devices. Memory management needed to be manual, if present at all. When every byte and every cycle counted, functional programming was a luxury. Or so conventional wisdom claimed.
 
 But conventional wisdom had rarely accounted for someone like Alex, a programmer who had lived long enough to see the full lifecycle of multiple programming paradigms. In the 1980s, he'd written a small project management program using an interactive APL system that used an IBM Selectric Teletypewriter to interact with a mainframe computer. He followed that up with implementations of the interactive FORTH programming language on Z80 single-board-computers and minicomputers. In the 1990s he wrote embedded C. He'd seen Java try and fail to conquer the world in the 2000s, and watched as microcontrollers grew more powerful while their programming models remained stubbornly unchanged.
 
-The final catalyst had been a 100,000+-line legacy {{cpp}} firmware codebase for an industrial scale indicator in 2016. It was filled with objects, global variables and complex state management. A subtle race condition, buried deep in the code, sporadically corrupted weight readings, costing the company dearly in certification delays and held shipments. After weeks of debugging a ghost, he'd finally cornered it.
+The final catalyst had been a 100,000+-line legacy <span style="white-space: nowrap;">C++</span> firmware codebase for an industrial scale indicator in 2016. It was filled with objects, global variables and complex state management. A subtle race condition, buried deep in the code, sporadically corrupted weight readings, costing the company dearly in certification delays and held shipments. After weeks of debugging a ghost, he'd finally cornered it.
 
-\"There has to be a better way,\" he'd thought. And that's when he'd first considered bringing Clojure's ideas, immutability, pure functions, and clear separation of state and identity, to the embedded world.
+"There has to be a better way," he'd thought. And that's when he'd first considered bringing Clojure's ideas, immutability, pure functions, and clear separation of state and identity, to the embedded world.
 
-How many times had he heard the refrain \"I guess you're too stupid to know you can't do that!\". Conventional wisdom had been wrong before.
+How many times had he heard the refrain "I guess you're too stupid to know you can't do that!". Conventional wisdom had been wrong before.
 
 A voice beside him, low and amused, Hamburg accent thick enough to spread on rye bread, interrupted his thoughts.
 
-\"Copy-on-write is just time travel with extra steps.\"
+"Copy-on-write is just time travel with extra steps."
 
 He turned.
 
-Purple hoodie, soaked through at the shoulders. Dark hair in an undercut that needed touching up, plastered to sharp cheekbones. Framework laptop clutched like a life raft against the storm, its surface barely visible beneath a constellation of stickers. The loudest one declared \"transducers > your feelings\" in neon colors.
+Purple hoodie, soaked through at the shoulders. Dark hair in an undercut that needed touching up, plastered to sharp cheekbones. Framework laptop clutched like a life raft against the storm, its surface barely visible beneath a constellation of stickers. The loudest one declared "transducers > your feelings" in neon colors.
 
 She smelled of North Sea rain, and the ghost of teenage rebellion.
 
-\"Elena Voss,\" she said, offering a wet hand. Her right thumb bore a jagged scar, like a tiny lightning bolt.
+"Elena Voss," she said, offering a wet hand. Her right thumb bore a jagged scar, like a tiny lightning bolt.
 
 Alex shook her hand. His grip was firm and steady, carrying the quiet confidence of someone who had greeted countless conference attendees and venture capitalists over the years. 
 
-\"Alex Harlan. Very nice to meet you!\"
+"Alex Harlan. Very nice to meet you!"
 
-She studied him with narrowed eyes, the hint of a smirk playing at the corner of her mouth. \"You're the Idaho guy. The one with the embedded Clojure idea.\"
+She studied him with narrowed eyes, the hint of a smirk playing at the corner of her mouth. "You're the Idaho guy. The one with the embedded Clojure idea."
 
-He raised an eyebrow. \"You follow my GitHub?\"
+He raised an eyebrow. "You follow my GitHub?"
 
-\"I follow the 'persistent collections' tag. Saw your posts about applying Hickey's ideas to microcontrollers. I thought it was an elaborate trolling attempt.\" Her eyes flicked over him again, reassessing. \"Turns out you're serious.\"
+"I follow the 'persistent collections' tag. Saw your posts about applying Hickey's ideas to microcontrollers. I thought it was an elaborate trolling attempt." Her eyes flicked over him again, reassessing. "Turns out you're serious."
 
-\"Most worthwhile ideas sound like trolling at first,\" he said. \"Especially the ones that challenge dogma.\"
+"Most worthwhile ideas sound like trolling at first," he said. "Especially the ones that challenge dogma."
 
-Her laugh was short and sharp. \"The embedded bros think anything that doesn't manually manage memory byte-by-byte is heresy. Half of them still believe garbage collection is Satan's work.\" She squinted at him, her assessment clearly ongoing. \"What I don't understand is why someone who's seventy would care about embedded programming. Isn't that a young person's game these days? Staying up all night soldering headers and battling memory leaks?\"
+Her laugh was short and sharp. "The embedded bros think anything that doesn't manually manage memory byte-by-byte is heresy. Half of them still believe garbage collection is Satan's work." She squinted at him, her assessment clearly ongoing. "What I don't understand is why someone who's seventy would care about embedded programming. Isn't that a young person's game these days? Staying up all night soldering headers and battling memory leaks?"
 
 Alex smiled. He'd fielded this kind of question before, the assumption that innovation belonged exclusively to the young. 
 
-\"I've outlived enough technologies to know what sticks,\" he said. \"The embedded world hasn't fundamentally changed since the 1980s. Different instruction sets, more power, sure, but the fundamental models stay the same. That's not evolution; that's stagnation.\"
+"I've outlived enough technologies to know what sticks," he said. "The embedded world hasn't fundamentally changed since the 1980s. Different instruction sets, more power, sure, but the fundamental models stay the same. That's not evolution; that's stagnation."
 
-\"Still,\" Elena pressed, clearly enjoying the debate. \"Most people your age are retired, golfing or whatever.\"
+"Still," Elena pressed, clearly enjoying the debate. "Most people your age are retired, golfing or whatever."
 
-\"I tried retirement,\" Alex admitted. \"Lasted exactly four days. By day three, I was writing firmware for my thermostat. Day four, I realized I was happiest when solving hard problems with talented people.\"
+"I tried retirement," Alex admitted. "Lasted exactly four days. By day three, I was writing firmware for my thermostat. Day four, I realized I was happiest when solving hard problems with talented people."
 
-Elena nodded slowly, something like respect flickering across her features. \"My grandmother was like that. Ran a machine shop until she was 82. Said idle hands were just wasted tools.\"
+Elena nodded slowly, something like respect flickering across her features. "My grandmother was like that. Ran a machine shop until she was 82. Said idle hands were just wasted tools."
 
-\"Smart woman.\"
+"Smart woman."
 
-\"She would've called your idea crazy, though,\" Elena added with a grin.
+"She would've called your idea crazy, though," Elena added with a grin.
 
-She tilted her chin at the lambda sculpture, the purple lambda tattoo on her forearm briefly visible as her sleeve shifted. \"Ever tried persistent collections on a 32 kB microcontroller?\"
+She tilted her chin at the lambda sculpture, the purple lambda tattoo on her forearm briefly visible as her sleeve shifted. "Ever tried persistent collections on a 32 kB microcontroller?"
 
-\"Every Thursday night for two decades,\" Alex admitted. \"Ends the same way: smoke, groans, and a quiet apology to Rich Hickey.\"
+"Every Thursday night for two decades," Alex admitted. "Ends the same way: smoke, groans, and a quiet apology to Rich Hickey."
 
-Her eyebrows shot up. \"You blew up a microcontroller? Like, literally smoke?\"
+Her eyebrows shot up. "You blew up a microcontroller? Like, literally smoke?"
 
-Alex nodded, a rueful expression crossing his face. \"The STM32F103, back in 2009. Four of them in one night. I was trying to implement a minimal Clojure vector with structural sharing, got the pointers wrong, and somehow executed the stop-and-catch-fire instruction, I guess. Silicon doesn't forgive pointer errors.\"
+Alex nodded, a rueful expression crossing his face. "The STM32F103, back in 2009. Four of them in one night. I was trying to implement a minimal Clojure vector with structural sharing, got the pointers wrong, and somehow executed the stop-and-catch-fire instruction, I guess. Silicon doesn't forgive pointer errors."
 
-Elena's response was unexpectedly enthusiastic. \"That's metal as hell.\" She pulled out her phone and showed him a photo of a blackened circuit board. \"AVR ATmega. Tried implementing a lock-free concurrent hash map. The hash collisions made a pattern, and I swear you can see a tiny lambda burned into the board.\"
+Elena's response was unexpectedly enthusiastic. "That's metal as hell." She pulled out her phone and showed him a photo of a blackened circuit board. "AVR ATmega. Tried implementing a lock-free concurrent hash map. The hash collisions made a pattern, and I swear you can see a tiny lambda burned into the board."
 
-Alex leaned forward, adjusting his glasses. \"You're right. There it is.\"
+Alex leaned forward, adjusting his glasses. "You're right. There it is."
 
-For a moment they were united in shared technical destruction, two hackers comparing war stories. Then Elena's eyes widened slightly. \"Wait. Two decades?\"
+For a moment they were united in shared technical destruction, two hackers comparing war stories. Then Elena's eyes widened slightly. "Wait. Two decades?"
 
-\"I'm persistent too, kid.\" He couldn't help the slight Idaho drawl on 'persistent.' \"Started messing with STM32s way back. Most of us working on scale equipment were still using 8-bit MCUs back then. Still are, some places.\"
+"I'm persistent too, kid." He couldn't help the slight Idaho drawl on 'persistent.' "Started messing with STM32s way back. Most of us working on scale equipment were still using 8-bit MCUs back then. Still are, some places."
 
-\"So you've been trying to cram Clojure concepts into {{cpp}} for embedded systems since before I finished high school.\"
+"So you've been trying to cram Clojure concepts into <span style="white-space: nowrap;">C++</span> for embedded systems since before I finished high school."
 
-Alex nodded. \"The first attempts were...dramatic failures. Like trying to teach a raccoon to play chess. You get the idea across eventually, but there's a lot of mess along the way.\"
+Alex nodded. "The first attempts were...dramatic failures. Like trying to teach a raccoon to play chess. You get the idea across eventually, but there's a lot of mess along the way."
 
-\"And yet you kept at it,\" she said, and it wasn't quite a question.
+"And yet you kept at it," she said, and it wasn't quite a question.
 
-\"Some ideas just don't let you go.\" He glanced back up at the lambda sculpture. \"This one has roots going all the way back to Church. The idea that transformation can happen without destruction. That we can have both the new and the old simultaneously. That the past doesn't have to be overwritten to create the future. That accretion is almost always the best way forward.\"
+"Some ideas just don't let you go." He glanced back up at the lambda sculpture. "This one has roots going all the way back to Church. The idea that transformation can happen without destruction. That we can have both the new and the old simultaneously. That the past doesn't have to be overwritten to create the future. That accretion is almost always the best way forward."
 
 Elena's expression had lost its edge of mockery, replaced by something harder to read. She looked up at the sculpture too, rainwater still dripping from her hoodie.
 
-\"When I first read Hickey's 'Are We There Yet?' talk transcript, I thought he'd been reading my personal blog posts,\" she said. \"All that stuff about identity, state, and values. About how we've been doing it wrong for decades.\" She shook her head. \"I was coding in a squat in Hamburg, running Clojure on a stolen ThinkPad. The idea that someone could articulate what was wrong with software so precisely...it was like finding out you're not crazy after all.\"
+"When I first read Hickey's 'Are We There Yet?' talk transcript, I thought he'd been reading my personal blog posts," she said. "All that stuff about identity, state, and values. About how we've been doing it wrong for decades." She shook her head. "I was coding in a squat in Hamburg, running Clojure on a stolen ThinkPad. The idea that someone could articulate what was wrong with software so precisely...it was like finding out you're not crazy after all."
 
-\"Rich has a gift for clarity,\" Alex agreed. \"He put words to problems I'd been struggling with since my punch-card days.\"
+"Rich has a gift for clarity," Alex agreed. "He put words to problems I'd been struggling with since my punch-card days."
 
 Elena suddenly laughed, bright, sudden and unstoppable, the kind of laugh that makes strangers turn and smile without knowing why. It filled the space beneath the sculpture, bouncing off the bronze and glass.
 
-\"I just realized who you are,\" she said. \"You're the guy who did that Clojure implementation for cloud-based scale indicators! I used your transducer library for a warehousing project in Leipzig in 2016.\"
+"I just realized who you are," she said. "You're the guy who did that Clojure implementation for cloud-based scale indicators! I used your transducer library for a warehousing project in Leipzig in 2016."
 
-\"Small world,\" Alex said, trying to hide his surprise. His scale management software had been a niche product for a niche industry. The odds of running into someone who'd used it, in a mathematics museum in Germany, were astronomically small. Astronomically small, like a tornado sweeping through a junkyard and assembling a fully functional Boeing 747.
+"Small world," Alex said, trying to hide his surprise. His scale management software had been a niche product for a niche industry. The odds of running into someone who'd used it, in a mathematics museum in Germany, were astronomically small. Astronomically small, like a tornado sweeping through a junkyard and assembling a fully functional Boeing 747.
 
-\"Your code saved that warehouse,\" Elena said. \"They were going to switch to SAP, which would have meant laying off half the staff. My Babashka Clojure script proved they could keep their old system if they just modernized the interface.\" Her eyes gleamed. \"It made me something of a legend in certain circles.\"
+"Your code saved that warehouse," Elena said. "They were going to switch to SAP, which would have meant laying off half the staff. My Babashka Clojure script proved they could keep their old system if they just modernized the interface." Her eyes gleamed. "It made me something of a legend in certain circles."
 
-She paused, then added with unexpected softness: \"Twenty-three people kept their jobs because of that project. The warehouse manager teared up when I showed him the demo. Said his father had worked there, and his grandfather before that.\"
+She paused, then added with unexpected softness: "Twenty-three people kept their jobs because of that project. The warehouse manager teared up when I showed him the demo. Said his father had worked there, and his grandfather before that."
 
 Alex nodded, unexpectedly moved. This was the part of programming he loved most, not the elegant algorithms or the clean abstractions, but the real-world impact. Lines of code translated into human lives. Abstractions that made concrete differences.
 
-\"Leipziger Lagerlösungen,\" Elena continued. \"Family-owned since 1887. They'd been using the same inventory system for two decades. Some consultant told them they needed to spend millions on SAP or go out of business.\"
+"Leipziger Lagerlösungen," Elena continued. "Family-owned since 1887. They'd been using the same inventory system for two decades. Some consultant told them they needed to spend millions on SAP or go out of business."
 
-\"And you proved them wrong,\" Alex said.
+"And you proved them wrong," Alex said.
 
-\"We proved them wrong,\" Elena corrected. \"I just connected their legacy system to your transducer library. Built a web front-end that their workers could use on tablets instead of the old terminal screens. But the core logic, the part that actually tracked where everything was, that was your code.\"
+"We proved them wrong," Elena corrected. "I just connected their legacy system to your transducer library. Built a web front-end that their workers could use on tablets instead of the old terminal screens. But the core logic, the part that actually tracked where everything was, that was your code."
 
-She pulled out her phone and quickly swiped to a photo. \"Here,\" she said, showing him the screen. It was a group picture, Elena in her purple hoodie surrounded by warehouse workers in blue coveralls, all smiling broadly. Someone had drawn a lambda symbol on a sheet and hung it like a banner. \"This was taken the day we went live. Three years ago, they sent me a bottle of whiskey on the anniversary. Still do.\"
+She pulled out her phone and quickly swiped to a photo. "Here," she said, showing him the screen. It was a group picture, Elena in her purple hoodie surrounded by warehouse workers in blue coveralls, all smiling broadly. Someone had drawn a lambda symbol on a sheet and hung it like a banner. "This was taken the day we went live. Three years ago, they sent me a bottle of whiskey on the anniversary. Still do."
 
-\"Glad to hear it was useful,\" Alex said. He was increasingly intrigued by this purple-haired programmer who'd somehow traced his digital footprints across the Atlantic.
+"Glad to hear it was useful," Alex said. He was increasingly intrigued by this purple-haired programmer who'd somehow traced his digital footprints across the Atlantic.
 
-\"So now you're trying to bring the same ideas to embedded?\" she asked.
+"So now you're trying to bring the same ideas to embedded?" she asked.
 
-\"Not just trying. I think I finally have an alpha implementation.\" Alex tapped the notebook tucked under his arm. \"A lock-free, allocation-free implementation of persistent arrays using the {{cpp}} `std::array` template class. Zero heap usage, no exceptions, and non-destructive modification. And the whole thing compiles down to less than 4 KB of object code.\"
+"Not just trying. I think I finally have an alpha implementation." Alex tapped the notebook tucked under his arm. "A lock-free, allocation-free implementation of persistent arrays using the <span style="white-space: nowrap;">C++</span> `std::array` template class. Zero heap usage, no exceptions, and non-destructive modification. And the whole thing compiles down to less than 4 KB of object code."
 
-Elena's eyebrows shot up. \"Full blown Clojure persistent data structures on a microcontroller? That's...\" She paused, searching for the right word. \"Impossible. You'd need structural sharing, path copying, hash array mapped tries. Even with modern MCUs, the memory constraints alone would ...\"
+Elena's eyebrows shot up. "Full blown Clojure persistent data structures on a microcontroller? That's..." She paused, searching for the right word. "Impossible. You'd need structural sharing, path copying, hash array mapped tries. Even with modern MCUs, the memory constraints alone would ..."
 
-\"No, no,\" Alex interrupted with a small smile. \"Not full-blown Clojure persistent data structures yet. I'm pragmatic enough to know when to crawl before walking. I've implemented a placeholder using copy-on-write as a starting point.\"
+"No, no," Alex interrupted with a small smile. "Not full-blown Clojure persistent data structures yet. I'm pragmatic enough to know when to crawl before walking. I've implemented a placeholder using copy-on-write as a starting point."
 
-\"Copy-on-write,\" Elena repeated, crossing her arms. \"That's hardly revolutionary. Every CS undergrad learns that.\"
+"Copy-on-write," Elena repeated, crossing her arms. "That's hardly revolutionary. Every CS undergrad learns that."
 
-\"True,\" Alex said, \"but I've combined it with some tricks. The secret is letting the {{cpp}} compiler's run-time capabilities do some heavy lifting. Templates, `constexpr` and compile-time resolution handle some of the bookkeeping, and go a long way toward providing a Clojure feel to {{cpp}} code. Get the abstractions right, and the memory management almost disappears.\" \"And not only that,\" Alex continued, \"but {{cpp}} implementations of some of the Clojure core functions to demonstrate the value of Clojure capabilities in an embedded system.\"
+"True," Alex said, "but I've combined it with some tricks. The secret is letting the <span style="white-space: nowrap;">C++</span> compiler's run-time capabilities do some heavy lifting. Templates, `constexpr` and compile-time resolution handle some of the bookkeeping, and go a long way toward providing a Clojure feel to <span style="white-space: nowrap;">C++</span> code. Get the abstractions right, and the memory management almost disappears." "And not only that," Alex continued, "but <span style="white-space: nowrap;">C++</span> implementations of some of the Clojure core functions to demonstrate the value of Clojure capabilities in an embedded system."
 
-Elena's skepticism gave way to curiosity. \"You've got it running on real hardware? Not just simulations?\"
+Elena's skepticism gave way to curiosity. "You've got it running on real hardware? Not just simulations?"
 
-\"Blinking LEDs and sampling sensors,\" Alex confirmed. \"But with this foundation, and more Clojure functions implemented in {{cpp}}, we can demonstrate the value of the approach in real-world scenarios. The full Clojure persistent data structures can come later.\"
+"Blinking LEDs and sampling sensors," Alex confirmed. "But with this foundation, and more Clojure functions implemented in <span style="white-space: nowrap;">C++</span>, we can demonstrate the value of the approach in real-world scenarios. The full Clojure persistent data structures can come later."
 
-\"Show me,\" she demanded, opening her laptop right there, the glow of the screen illuminating her face in the dim museum light.
+"Show me," she demanded, opening her laptop right there, the glow of the screen illuminating her face in the dim museum light.
 
-Alex shook his head. \"Not quite ready for that. The code works, but it's ugly as sin. I need to clean it up, document it properly.\" He hesitated. \"And to be honest, I could use help from someone who really understands modern {{cpp}} well. I think the language has changed more in the last decade than in its previous thirty years.\"
+Alex shook his head. "Not quite ready for that. The code works, but it's ugly as sin. I need to clean it up, document it properly." He hesitated. "And to be honest, I could use help from someone who really understands modern <span style="white-space: nowrap;">C++</span> well. I think the language has changed more in the last decade than in its previous thirty years."
 
-Elena raised an eyebrow. \"Asking for help? That's... refreshingly humble for an American.\"
+Elena raised an eyebrow. "Asking for help? That's... refreshingly humble for an American."
 
-\"Seventy years teaches you the limits of your knowledge,\" Alex replied with a shrug. \"It's less about pride and more about efficiency at my age.\"
+"Seventy years teaches you the limits of your knowledge," Alex replied with a shrug. "It's less about pride and more about efficiency at my age."
 
-\"So you're in Germany for how long?\"
+"So you're in Germany for how long?"
 
-\"Flying back Tuesday. Just a short vacation.\"
+"Flying back Tuesday. Just a short vacation."
 
-She looked almost offended. \"And you weren't going to share this with anyone? Just fly home and, what, post it on GitHub with no context?\"
+She looked almost offended. "And you weren't going to share this with anyone? Just fly home and, what, post it on GitHub with no context?"
 
-\"I wasn't sure anyone would care,\" he admitted.
+"I wasn't sure anyone would care," he admitted.
 
-Elena laughed again, but there was an edge to it now. \"You Americans are all the same. You think Europe is just castles and beer.\" She closed her laptop decisively. \"Thursday, then. Bensheim. Alte Stellmacherei hacker space, 19:30. There'll be two more lunatics there who also believe gifts should be free.\"
+Elena laughed again, but there was an edge to it now. "You Americans are all the same. You think Europe is just castles and beer." She closed her laptop decisively. "Thursday, then. Bensheim. Alte Stellmacherei hacker space, 19:30. There'll be two more lunatics there who also believe gifts should be free."
 
-Alex blinked. \"I'm supposed to be on a plane Tuesday.\"
+Alex blinked. "I'm supposed to be on a plane Tuesday."
 
-\"Change it,\" she said, with the complete confidence of someone unused to being refused. \"Thursday is when we meet. Pizza arrives at 20:02, exactly 32 minutes after doors open. It's tradition.\"
+"Change it," she said, with the complete confidence of someone unused to being refused. "Thursday is when we meet. Pizza arrives at 20:02, exactly 32 minutes after doors open. It's tradition."
 
 Behind Elena, the glass wall of the exhibit was fogging up from the contrast between the warm interior and the cold rain outside. Alex reached out and swept a clear stripe across the fogged glass panel beneath the sculpture. With one finger he wrote the Clojure definition that would outlive them both:
-"))
 
+
+
+::: {.sourceClojure}
+```clojure
 (def cljonic ;; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
+```
+:::
 
-(kind/md "
+
+
 Elena read it aloud, slowly, like she was tasting wine from the future. The syllables rolled off her tongue, each consonant given its proper weight.
 
 She looked up. The rain on the roof had eased to a whisper.
 
-\"Repo name?\" she asked.
+"Repo name?" she asked.
 
-\"cljonic. Lowercase,\" Alex replied. \"Because capital letters are for languages that need to shout.\"
+"cljonic. Lowercase," Alex replied. "Because capital letters are for languages that need to shout."
 
 She nodded approvingly, a small smile playing at the corner of her mouth. Then she stepped back, preparing to leave.
 
-\"Programming languages are just dialects of human thought,\" Alex added. \"The quieter ones often have more to say.\"
+"Programming languages are just dialects of human thought," Alex added. "The quieter ones often have more to say."
 
 She was already backing toward the exit, hoodie dripping, laptop glowing like a small defiant star beneath her arm.
 
-\"See you Thursday, Alex Harlan. History doesn't wait for garbage collection.\"
+"See you Thursday, Alex Harlan. History doesn't wait for garbage collection."
 
 The doors hissed open. She vanished into the grey November afternoon.
 
 But not before tossing one last sentence over her shoulder, half laugh, half snarky-challenge:
 
-\"You don't really believe in a sky-daddy, do you?\"
+"You don't really believe in a sky-daddy, do you?"
 
 Alex smiled at the empty air, the accusation familiar after three decades of fielding it from surprised colleagues. The question always came with the same tone of bemused discovery, as if finding a cross on an engineer was like finding a fish riding a bicycle.
 
-\"I believe the universe is written in a language that never erases its history,\" he said quietly, even though she was already gone. \"Turns out that's easier to defend than random chance.\"
+"I believe the universe is written in a language that never erases its history," he said quietly, even though she was already gone. "Turns out that's easier to defend than random chance."
 
 He stepped out into the rain, shoulders squared, the first parenthesis of a new conversation already echoing behind him. The silver cross rested against his chest, beneath his flannel shirt. A simple reminder that the universe's persistence layer ran deeper than silicon.
 
@@ -271,19 +286,25 @@ P.S. Bring the notebook. All of it.
 Alex smiled and slipped the phone back into his pocket. Maybe his last big idea wouldn't be so lonely after all.
 
 Before leaving, he glanced back one more time at the Clojure definition he'd written in the condensation. It was still there, defying the entropy of evaporation:
-")
 
+
+
+::: {.sourceClojure}
+```clojure
 (def cljonic ;; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
+```
+:::
 
-(kind/md "
+
+
 A Clojure definition that might just change embedded programming forever, if the universe was kind. And if not, well, at least they'd survived the rain.
 
 ---
 
-Back in his hotel room that evening, Alex opened his laptop and created a new GitHub repository. The commit message was brief but precise, a developer's way of marking a moment in time. His finger hovered over the \"Create repository\" button for just a moment before pressing it.
+Back in his hotel room that evening, Alex opened his laptop and created a new GitHub repository. The commit message was brief but precise, a developer's way of marking a moment in time. His finger hovered over the "Create repository" button for just a moment before pressing it.
 
-<pre style=\"background:#333333; padding:16px; border-radius:6px;\">
+<pre style="background:#333333; padding:16px; border-radius:6px;">
 commit 47790793db4ba8dc817f78f7c50f72fe7997a092 (HEAD -> main, origin/main)
 Author: Alex Harlan <alex.harlan@cljonic.dev>
 Date:   Sat Nov 8 14:27:00 2025 +0100
@@ -291,7 +312,7 @@ Date:   Sat Nov 8 14:27:00 2025 +0100
     feat: Initialize cljonic repo with wet lambda encounter
 
     - Add initial meeting: Elena Voss at Mathematikum under Church's lambda
-    - Define core concept: (def cljonic \"Clojure's laconic gift to embedded developers\")
+    - Define core concept: (def cljonic "Clojure's laconic gift to embedded developers")
     - Foreshadow team assembly: Bensheim hacker space, two more lunatics
     - Theme hook: Persistent faith in a copy-on-write world
 
@@ -300,7 +321,7 @@ Date:   Sat Nov 8 14:27:00 2025 +0100
 
 The universe might forget, but git wouldn't. Not unless someone explicitly forced it to.
 
-Later, as rain continued to drum against the hotel window, he thought about Elena's question. The \"sky-daddy\" jab wasn't new, he'd been fielding variants of it since his Christian conversion at age 40, after a decade of investigating the evidence for God. The old Alex, the hard atheist who believed God was a syntax error, would have scoffed at his future self.
+Later, as rain continued to drum against the hotel window, he thought about Elena's question. The "sky-daddy" jab wasn't new, he'd been fielding variants of it since his Christian conversion at age 40, after a decade of investigating the evidence for God. The old Alex, the hard atheist who believed God was a syntax error, would have scoffed at his future self.
 
 But thirty years of developing software had taught him something important: complex systems don't arise by accident. Ordered complexity usually implied design, or at least intentionality. And the universe was nothing if not an ordered complex system.
 
@@ -311,17 +332,23 @@ But Alex worried. He wondered whether his age and his faith might cause Elena, R
 Alex let go of his worry as he tried to fall sleep. Tomorrow he would change his flight. Thursday at the hacker space would be interesting.
 
 The last thing he saw before closing his laptop was the repository he'd just created, empty except for a README.md file containing that first Clojure definition:
-")
 
+
+
+::: {.sourceClojure}
+```clojure
 (def cljonic ;; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
+```
+:::
 
-(kind/md "
+
+
 ---
 
 Half a kilometer away, in a small apartment near the Gießen train station, Elena Voss was also looking at her screen, the blue light reflecting off her face as she scrolled through Alex's GitHub history.
 
-\"Hiding in plain sight,\" she murmured. \"All this time.\"
+"Hiding in plain sight," she murmured. "All this time."
 
 She'd first encountered his code during her early Babashka days, but had never connected it to the anonymous contributor whose PRs to various Clojure libraries she'd been following for years. The more she dug, the more she found, small, elegant solutions to annoying problems and useful features, slipped quietly into the ecosystem without fanfare.
 
@@ -333,20 +360,28 @@ If he really had a demonstrable start...
 
 She thought of the silver cross she'd glimpsed on his chain. Religious, she thought, surprising. How could someone understand the elegance of mathematics, the precision of code, and still believe in mythology?
 
-And yet there was something about Alex that didn't fit the stereotype. He wasn't preachy or dogmatic. When she'd made the \"sky-daddy\" jab, he hadn't reacted with offense or attacked with apologetics.
+And yet there was something about Alex that didn't fit the stereotype. He wasn't preachy or dogmatic. When she'd made the "sky-daddy" jab, he hadn't reacted with offense or attacked with apologetics.
 
 Instead, he'd talked about persistence. About history that refused to be erased. It was unnerving. He didn't fit the stereotype she had ready for him. Maybe, just maybe, he wasn't just a collection of legacy bugs after all.
 
 Elena's fingers tapped a quick rhythm on her laptop, a habit from her teenage coding days. Maybe he is different. More like Clojure itself, quiet, consistent, built on careful research, first principles, iteration, immutability and transformations.
 
 She opened her terminal and typed:
-")
 
+
+
+::: {.sourceClojure}
+```clojure
 (def cljonic ;; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
-;; #'user/cljonic
+```
+:::
 
-(kind/md "
+
+
+#'user/cljonic
+
+
 The REPL responded, accepting the definition. Simple, elegant, persistent.
 
 She smiled. Thursday would be interesting indeed.
@@ -357,7 +392,7 @@ She took another swig of Club-Mate, then checked her phone. Three messages from 
 
 She opened her contacts and found Nico, the Alte Stellmacherei caretaker.
 
-<pre style=\"background:#333333; padding:16px; border-radius:6px;\">
+<pre style="background:#333333; padding:16px; border-radius:6px;">
 To: Nico
 Thursday we need the big oscilloscope. And the logic analyzer. 
           
@@ -368,20 +403,27 @@ We have a guest from America who claims to have a start on the persistent microc
 P.S. Order extra pizza. This one looks like he actually eats.
 </pre>
           
-Unlike so many of the young programmers she encountered, Alex had the steady confidence of someone who'd fought enough battles to know which ones mattered. No posturing, no jargon-filled manifestos about the \"future of computing.\" Just quiet, steady focus on solving a hard problem that others thought impossible.
+Unlike so many of the young programmers she encountered, Alex had the steady confidence of someone who'd fought enough battles to know which ones mattered. No posturing, no jargon-filled manifestos about the "future of computing." Just quiet, steady focus on solving a hard problem that others thought impossible.
 
 Maybe there was something to be said for persistence, after all.
 
 She turned back to her REPL session. The cursor blinked, waiting patiently for the next command. The beauty of the REPL was that it didn't judge. It didn't care if your code was elegant or ugly, clever or straightforward. It simply took what you gave it, transformed it according to clear rules, and showed you the result.
 
 Elena typed a second line:
-")
 
+
+
+::: {.sourceClojure}
+```clojure
 (def cljonic ;; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
-;; ;; Elena Voss has joined the REPL
+```
+:::
 
-(kind/md (alias-expand "
+
+;; Elena Voss has joined the REPL
+
+
 The statement felt like a commitment. A tiny declaration that something important had begun.
 
 Outside, the rain continued to fall on the streets of Gießen, a steady drumbeat that seemed to echo: persist, persist, persist.
@@ -394,9 +436,9 @@ The hotel room was small but comfortable. A framed print of Goethe hung on the w
 
 Alex thought about the two other lunatics Elena had mentioned. Raj and Kai. He pulled up his phone and searched for them.
 
-Raj Patel. Quantum physicist, currently at TU Darmstadt. Several papers on topological quantum computing and Majorana zero modes. Young, brilliant, with a reputation for working barefoot even in the lab, a quirk that had earned him the nickname \"the quantum monk\" among peers.
+Raj Patel. Quantum physicist, currently at TU Darmstadt. Several papers on topological quantum computing and Majorana zero modes. Young, brilliant, with a reputation for working barefoot even in the lab, a quirk that had earned him the nickname "the quantum monk" among peers.
 
-Kai Le. Hardware engineer extraordinaire. Vietnamese background. Special focus on ultra-low-power embedded {{cpp}} systems. Famous for a demonstration where he'd flown a drone for 72 hours on a single charge by implementing a novel memory management algorithm. A string of posts on the STM32 forums showed he'd been trying similar approaches to Alex's, but hitting the same walls.
+Kai Le. Hardware engineer extraordinaire. Vietnamese background. Special focus on ultra-low-power embedded <span style="white-space: nowrap;">C++</span> systems. Famous for a demonstration where he'd flown a drone for 72 hours on a single charge by implementing a novel memory management algorithm. A string of posts on the STM32 forums showed he'd been trying similar approaches to Alex's, but hitting the same walls.
 
 Interesting company Elena kept. They certainly weren't conventional thinkers. But then, conventional thinking rarely led to valuable progress.
 
@@ -418,7 +460,7 @@ What if Alex had actually addressed it? Not just theoretically, but with a real 
 
 Elena glanced at her phone. Two more messages from Kai:
 
-<pre style=\"background:#333333; padding:16px; border-radius:6px;\">
+<pre style="background:#333333; padding:16px; border-radius:6px;">
 So this old American thinks he can solve in his spare time what we've been failing at? Sounds legit. 🙄
 </pre>
 
@@ -426,7 +468,7 @@ She ignored the messages. Kai would see for himself on Thursday.
 
 Raj had been more measured in his response:
 
-<pre style=\"background:#333333; padding:16px; border-radius:6px;\">
+<pre style="background:#333333; padding:16px; border-radius:6px;">
 Interesting. The theoretical possibility exists. I'd be curious to see how he handles the memory reclamation problem without GC.
 
 Bring him to the barn. We have a spare oscilloscope.
@@ -434,7 +476,7 @@ Bring him to the barn. We have a spare oscilloscope.
 
 She set her phone down and turned back to her code. A new approach was forming in her mind, inspired by what Alex had described. If he was right about compile-time handling some of the heavy lifting...
 
-She opened the Neovim editor in a new terminal window and began crafting a {{cpp}} template class that could serve as a foundational piece.
+She opened the Neovim editor in a new terminal window and began crafting a <span style="white-space: nowrap;">C++</span> template class that could serve as a foundational piece.
 
 She stared at the code, chewing her lip. This wouldn't work on a microcontroller, `std::shared_ptr` meant dynamic allocation. But it captured the essence of what Alex might be attempting with his copy-on-write approach.
 
@@ -447,35 +489,146 @@ In two different locations, separated by half a kilometer, two programmers worke
 Two parentheses, opening but not yet closed, the beginning of a conversation that would reshape embedded computing forever.
 
 ---
-"))
 
+
+
+::: {.sourceClojure}
+```clojure
 (def cljonic "Clojure's laconic gift to embedded developers")
+```
+:::
 
-;; ;; Elena Voss has joined the REPL
 
+;; Elena Voss has joined the REPL
+
+
+::: {.sourceClojure}
+```clojure
 (defn copy-on-write [old new-val]
   (assoc old :val new-val :history (conj (:history old) (:val old))))
+```
+:::
 
+
+
+::: {.sourceClojure}
+```clojure
 (copy-on-write {:val 1 :history []} 2)
+```
+:::
 
+
+
+::: {.printedClojure}
+```clojure
+{:val 2, :history [1]}
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
 (defn obsolete? [_] false)
+```
+:::
 
+
+
+::: {.sourceClojure}
+```clojure
 (obsolete? (copy-on-write {:val "Alex" :history []} "Persistence"))
+```
+:::
 
+
+
+::: {.printedClojure}
+```clojure
+false
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
 (def echo1 (copy-on-write {:val "Church" :history []} "McCarthy"))
+```
+:::
 
+
+
+::: {.sourceClojure}
+```clojure
 (def echo2 (copy-on-write echo1 "Hickey"))
+```
+:::
 
+
+
+::: {.sourceClojure}
+```clojure
 (def echo3 (copy-on-write echo2 "cljonic"))
+```
+:::
 
+
+
+::: {.sourceClojure}
+```clojure
 echo1
+```
+:::
 
+
+
+::: {.printedClojure}
+```clojure
+{:val "McCarthy", :history ["Church"]}
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
 echo2
+```
+:::
 
+
+
+::: {.printedClojure}
+```clojure
+{:val "Hickey", :history ["Church" "McCarthy"]}
+
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
 echo3
+```
+:::
 
-;; ;; Now THAT'S persistence - a complete, immutable history
 
-;; ;; But can a 32kB MCU handle this?
 
-;; ;; Thursday, we'll find out.
+::: {.printedClojure}
+```clojure
+{:val "cljonic", :history ["Church" "McCarthy" "Hickey"]}
+
+```
+:::
+
+
+;; Now THAT'S persistence - a complete, immutable history
+
+;; But can a 32kB MCU handle this?
+
+;; Thursday, we'll find out.
