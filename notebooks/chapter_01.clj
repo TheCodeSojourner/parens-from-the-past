@@ -187,9 +187,9 @@ Elena's eyebrows shot up. \"Full blown Clojure persistent data structures on a m
 
 \"No, no,\" Alex interrupted with a small smile. \"Not full-blown Clojure persistent data structures yet. I'm pragmatic enough to know when to crawl before walking. I've implemented a placeholder using copy-on-write as a starting point.\"
 
-\"Copy-on-write,\" Elena repeated, crossing her arms. \"That's hardly revolutionary. Every CS undergrad learns that.\"
+\"Copy-on-write,\" Elena repeated, crossing her arms. \"That's hardly revolutionary. Every Computer Science undergrad learns that.\"
 
-\"True,\" Alex said, \"but I've combined it with some tricks. The secret is letting the {{cpp}} compiler's run-time capabilities do some heavy lifting. Templates, `constexpr` and compile-time resolution handle some of the bookkeeping, and go a long way toward providing a Clojure feel to {{cpp}} code. Get the abstractions right, and the memory management almost disappears.\" \"And not only that,\" Alex continued, \"but {{cpp}} implementations of some of the Clojure core functions to demonstrate the value of Clojure capabilities in an embedded system.\"
+\"True,\" Alex said, \"but I've combined it with some tricks. The secret is letting the {{cpp}} compiler's compile-time capabilities do some heavy lifting. Templates, `constexpr` and compile-time resolution handle some of the bookkeeping, and go a long way toward providing a Clojure feel to {{cpp}} code. Get the abstractions right, and the memory management almost disappears.\" \"And not only that,\" Alex continued, \"but {{cpp}} implementations of some of the Clojure core functions to demonstrate the value of Clojure capabilities in an embedded system.\"
 
 Elena's skepticism gave way to curiosity. \"You've got it running on real hardware? Not just simulations?\"
 
