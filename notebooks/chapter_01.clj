@@ -65,11 +65,11 @@ Seventy years old now. Faded navy flannel shirt with sleeves rolled once, the sa
 
 He had flown to Frankfurt from Idaho the night before, carrying nothing but a PinePhone Pro in its handmade leather case (stitched in Rice Lake, Wisconsin), a ten year old Asus fanless laptop, a notebook bound in duct tape. And a quiet certainty that this would be his last big idea.
 
-The notebook contained ideas for a Clojure-inspired {{cpp}} library for embedded systems, a concept he'd been refining for quite some time. A gift from Clojure to the embedded development world: the power of immutable data and functional programming without the overhead of garbage collection, heap management or exceptions, brought to the constrained environment of microcontrollers.
+The notebook contained ideas for a Clojure-inspired {{cpp}} library for embedded systems, a concept he'd been refining for quite some time. A gift from Clojure to the embedded development world: the power of immutable data and functional programming without the overhead of garbage collection, heap management or exceptions, brought to the constrained environment of Microcontroller Units (MCUs).
 
 The notebook itself was a testament to his working style. Each page a careful mix of {{cpp}} code fragments, memory layouts drawn with mechanical precision, and the occasional philosophical note in the margins. His handwriting had remained unchanged for fifty years, neat engineer's lettering, with critical calculations circled and underlined. Several pages showed the progression of his thinking about the core data structures: first attempts, cross-outs, refinements, and finally the hopefully elegant solution he'd arrived at just last month.
 
-He'd worked on embedded systems since the early days of his career. While much of the computing world had moved to increasingly abstract layers, microcontrollers still operated close to the metal, resource-constrained, real-time systems where every memory byte and CPU cycle mattered. Scale indicators, industrial controllers, medical devices, these were part of his world, a world where software wasn't just ones and zeros but directly controlled physical reality.
+He'd worked on embedded systems since the early days of his career. While much of the computing world had moved to increasingly abstract layers, MCUs still operated close to the metal, resource-constrained, real-time systems where every memory byte and CPU cycle mattered. Scale indicators, industrial controllers, medical devices, these were part of his world, a world where software wasn't just ones and zeros but directly controlled physical reality.
 
 \"One last attempt to add value before I'm obsolete,\" he'd written in an email to himself last month. \"Clojure on the metal, no heap, no exceptions, pure conversation.\"
 
@@ -79,7 +79,7 @@ But defacto standards often meant stagnation. The same design patterns, the same
 
 It was the kind of idea that terrified most embedded developers. Sacred cows made the best burgers, but nobody wanted to be the butcher. \"Don't fix it if it ain't broke\" was the mantra. Mutability was supposed to be essential for performance on constrained devices. Memory management needed to be manual, if present at all. When every byte and every cycle counted, functional programming was a luxury. Or so conventional wisdom claimed.
 
-But conventional wisdom had rarely accounted for someone like Alex, a programmer who had lived long enough to see the full lifecycle of multiple programming paradigms. In the 1980s, he'd written a small project management program using a REPL-based APL system that used an IBM Selectric Teletypewriter to interact with a mainframe computer. He followed that up with implementations of the REPL-based FORTH programming language on Z80 single-board-computers and minicomputers. In the 1990s he wrote embedded C. He'd seen Java try and fail to conquer the world in the 2000s, and watched as microcontrollers grew more powerful while their programming models remained stubbornly unchanged.
+But conventional wisdom had rarely accounted for someone like Alex, a programmer who had lived long enough to see the full lifecycle of multiple programming paradigms. In the 1980s, he'd written a small project management program using a REPL-based APL system that used an IBM Selectric Teletypewriter to interact with a mainframe computer. He followed that up with implementations of the REPL-based FORTH programming language on Z80 single-board-computers and minicomputers. In the 1990s he wrote embedded C. He'd seen Java try and fail to conquer the world in the 2000s, and watched as MCUs grew more powerful while their programming models remained stubbornly unchanged.
 
 The final catalyst had been a 100,000+-line legacy {{cpp}} firmware codebase for an industrial scale indicator in 2016. It was filled with objects, global variables and complex state management. A subtle race condition, buried deep in the code, sporadically corrupted weight readings, costing the company dearly in certification delays and held shipments. After weeks of debugging a ghost, he'd finally cornered it.
 
@@ -107,7 +107,7 @@ She studied him with narrowed eyes, the hint of a smirk playing at the corner of
 
 He raised an eyebrow. \"You follow my GitHub?\"
 
-\"I follow the 'persistent collections' tag. Saw your posts about applying Hickey's ideas to microcontrollers. I thought it was an elaborate trolling attempt.\" Her eyes flicked over him again, reassessing. \"Turns out you're serious.\"
+\"I follow the 'persistent collections' tag. Saw your posts about applying Hickey's ideas to MCUs. I thought it was an elaborate trolling attempt.\" Her eyes flicked over him again, reassessing. \"Turns out you're serious.\"
 
 \"Most worthwhile ideas sound like trolling at first,\" he said. \"Especially the ones that challenge dogma.\"
 
@@ -127,11 +127,11 @@ Elena nodded slowly, something like respect flickering across her features. \"My
 
 \"She would've called your idea crazy, though,\" Elena added with a grin.
 
-She tilted her chin at the lambda sculpture, the purple lambda tattoo on her forearm briefly visible as her sleeve shifted. \"Ever tried persistent collections on a 32 kB microcontroller?\"
+She tilted her chin at the lambda sculpture, the purple lambda tattoo on her forearm briefly visible as her sleeve shifted. \"Ever tried persistent collections on a 32 kB MCU?\"
 
 \"Every Thursday night for two decades,\" Alex admitted. \"Ends the same way: smoke, groans, and a quiet apology to Rich Hickey.\"
 
-Her eyebrows shot up. \"You blew up a microcontroller? Like, literally smoke?\"
+Her eyebrows shot up. \"You blew up MCUs? Like, literally smoke?\"
 
 Alex nodded, a rueful expression crossing his face. \"The STM32F103, back in 2009. Four of them in one night. I was trying to implement a minimal Clojure vector with structural sharing, got the pointers wrong, and somehow executed the stop-and-catch-fire instruction, I guess. Silicon doesn't forgive pointer errors.\"
 
@@ -183,7 +183,7 @@ She pulled out her phone and quickly swiped to a photo. \"Here,\" she said, show
 
 \"Not just trying. I think I finally have an alpha implementation.\" Alex tapped the notebook tucked under his arm. \"A lock-free, allocation-free implementation of persistent arrays using the {{cpp}} `std::array` template class. Zero heap usage, no exceptions, and non-destructive modification. And the whole thing compiles down to less than 4 KB of object code.\"
 
-Elena's eyebrows shot up. \"Full blown Clojure persistent data structures on a microcontroller? That's...\" She paused, searching for the right word. \"Impossible. You'd need structural sharing, path copying, hash array mapped tries. Even with modern MCUs, the memory constraints alone would ...\"
+Elena's eyebrows shot up. \"Full blown Clojure persistent data structures on MCUs? That's...\" She paused, searching for the right word. \"Impossible. You'd need structural sharing, path copying, hash array mapped tries. Even with modern MCUs, the memory constraints alone would ...\"
 
 \"No, no,\" Alex interrupted with a small smile. \"Not full-blown Clojure persistent data structures yet. I'm pragmatic enough to know when to crawl before walking. I've implemented a placeholder using copy-on-write as a starting point.\"
 
