@@ -5,21 +5,16 @@
 ;; # Parens From The Past
 
 (kind/hiccup
- [:h1 "A Laconic Odyssey"])
-
-(kind/hiccup
- [:table {:style {:width "100%", :table-layout "fixed"}}
-  [:tr
-   [:td {:style {:width "50%", :padding-right "1em", :vertical-align :center}}
-    [:img {:src "notebooks/images/logo.png", :alt "Cljonic"
-           :style {:display :block, :height :auto, :width "100%"}}]]
-   [:td {:style {:width "50%", :padding-left "1em", :vertical-align :middle}}
-    [:blockquote
-     [:div {:style {:font-size "2em", :font-weight :bold}} "Laconic"]
-     [:div "/ləˈkɒnɪk/"]
-     [:div {:style {:font-style :italic}} "adjective"]
-     [:br]
-     [:div "Expressing much in few words; brief and pithy; concise to the point of seeming mysterious."]]]]])
+ [:div
+  [:h1 "A Laconic Odyssey"]
+  [:blockquote
+   [:div {:style {:font-size "2em", :font-weight :bold}} "Laconic"]
+   [:div "/ləˈkɒnɪk/"]
+   [:div {:style {:font-style :italic}} "adjective"]
+   [:br]
+   [:div "Expressing much in few words; brief and pithy; concise to the point of seeming mysterious."]]
+  [:img {:src "notebooks/images/logo.png", :alt "Cljonic"
+         :style {:display :block, :margin-left :auto, :margin-right :auto, :height :auto, :width "50%"}}]])
 
 (kind/md
  "

@@ -17,13 +17,7 @@ format:
 
 
 ```{=html}
-<h1>A Laconic Odyssey</h1>
-```
-
-
-
-```{=html}
-<table style="table-layout:fixed;width:100%;"><tr><td style="padding-right:1em;vertical-align:center;width:50%;"><img alt="Cljonic" src="notebooks/images/logo.png" style="display:block;height:auto;width:100%;" /></td><td style="padding-left:1em;vertical-align:middle;width:50%;"><blockquote><div style="font-size:2em;font-weight:bold;">Laconic</div><div>/ləˈkɒnɪk/</div><div style="font-style:italic;">adjective</div><br /><div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div></blockquote></td></tr></table>
+<div><h1>A Laconic Odyssey</h1><blockquote><div style="font-size:2em;font-weight:bold;">Laconic</div><div>/ləˈkɒnɪk/</div><div style="font-style:italic;">adjective</div><br /><div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div></blockquote><img alt="Cljonic" src="notebooks/images/logo.png" style="display:block;height:auto;margin-left:auto;margin-right:auto;width:50%;" /></div>
 ```
 
 
