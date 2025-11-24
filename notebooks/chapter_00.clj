@@ -12,7 +12,7 @@
   [:tr
    [:td {:style {:width "50%", :padding-right "1em", :align :center}}
     [:img {:src "notebooks/images/logo.png", :alt "Cljonic"
-           :style {:display :block, :margin "0 auto", :height "12em"}}]]
+           :style {:display :block, :margin "0 auto", :height "100%"}}]]
    [:td {:style {:width "50%", :padding-left "1em", :vertical-align :middle}}
     [:blockquote
      [:div {:style {:font-size "2em", :font-weight :bold}} "Laconic"]

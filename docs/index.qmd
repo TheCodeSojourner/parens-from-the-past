@@ -23,7 +23,7 @@ format:
 
 
 ```{=html}
-<table style="width:100%;;"><tr><td style="align:center;padding-right:1em;width:50%;"><img alt="Cljonic" src="notebooks/images/logo.png" style="display:block;height:12em;margin:0 auto;" /></td><td style="padding-left:1em;vertical-align:middle;width:50%;"><blockquote><div style="font-size:2em;font-weight:bold;">Laconic</div><div>/ləˈkɒnɪk/</div><div style="font-style:italic;">adjective</div><br /><div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div></blockquote></td></tr></table>
+<table style="width:100%;;"><tr><td style="align:center;padding-right:1em;width:50%;"><img alt="Cljonic" src="notebooks/images/logo.png" style="display:block;height:100%;margin:0 auto;" /></td><td style="padding-left:1em;vertical-align:middle;width:50%;"><blockquote><div style="font-size:2em;font-weight:bold;">Laconic</div><div>/ləˈkɒnɪk/</div><div style="font-style:italic;">adjective</div><br /><div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div></blockquote></td></tr></table>
 ```
 
 
