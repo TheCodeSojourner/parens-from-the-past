@@ -8,11 +8,11 @@
  [:h1 "A Laconic Odyssey"])
 
 (kind/hiccup
- [:table {:style {:width "100%;"}}
+ [:table {:style {:width "100%", :table-layout "fixed"}}
   [:tr
-   [:td {:style {:width "50%", :padding-right "1em", :align :center}}
+   [:td {:style {:width "50%", :padding-right "1em", :vertical-align :center}}
     [:img {:src "notebooks/images/logo.png", :alt "Cljonic"
-           :style {:display :block, :margin "0 auto", :height "100%"}}]]
+           :style {:display :block, :height :auto, :width "100%"}}]]
    [:td {:style {:width "50%", :padding-left "1em", :vertical-align :middle}}
     [:blockquote
      [:div {:style {:font-size "2em", :font-weight :bold}} "Laconic"]
