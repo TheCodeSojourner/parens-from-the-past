@@ -457,7 +457,7 @@ Bring him to the barn. We have a spare oscilloscope.
 </pre>
 <p>She set her phone down and turned back to her code. A new approach was forming in her mind, inspired by what Alex had described. If he was right about compile-time handling some of the heavy lifting…</p>
 <p>She opened the Neovim editor in a new terminal window and began crafting a <span style="white-space: nowrap;">C++</span> template class that could serve as a foundational piece.</p>
-<p>She stared at the code, chewing her lip. This wouldn’t work on a microcontroller, <code>std::shared_ptr</code> meant dynamic allocation. But it captured the essence of what Alex might be attempting with his copy-on-write approach.</p>
+<p>She stared at the code, chewing her lip. This wouldn’t work on a microcontroller, <code>std::shared_ptr</code> meant heap allocation, and maybe exceptions. But it captured the essence of what Alex might be attempting with his copy-on-write approach.</p>
 <p>Could she modify it to use static allocation only? What if…</p>
 <p>The clock on her screen showed 3:14 AM. Outside, the rain had finally stopped. She deleted everything and started over, this time with a lower-level approach that just might work on an MCU.</p>
 <p>In two different locations, separated by half a kilometer, two programmers worked through the night. One with decades of experience, one with raw talent and determination. Both driven by the same vision: a world where software remembered, where history wasn’t constantly overwritten, where the past and future could coexist in the same persistent timeline.</p>

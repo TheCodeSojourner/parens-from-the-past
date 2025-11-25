@@ -439,7 +439,7 @@ She set her phone down and turned back to her code. A new approach was forming i
 
 She opened the Neovim editor in a new terminal window and began crafting a {{c++}} template class that could serve as a foundational piece.
 
-She stared at the code, chewing her lip. This wouldn't work on a microcontroller, `std::shared_ptr` meant dynamic allocation. But it captured the essence of what Alex might be attempting with his copy-on-write approach.
+She stared at the code, chewing her lip. This wouldn't work on a microcontroller, `std::shared_ptr` meant heap allocation, and maybe exceptions. But it captured the essence of what Alex might be attempting with his copy-on-write approach.
 
 Could she modify it to use static allocation only? What if...
 
