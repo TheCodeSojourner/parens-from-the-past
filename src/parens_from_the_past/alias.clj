@@ -17,7 +17,7 @@
           aliases))
 
 (def aliases
-  {:cpp "C++"
+  {:c++ "C++"
    :c# "C#"})
 
 (defn alias-expand [s]

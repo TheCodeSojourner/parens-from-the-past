@@ -44,7 +44,7 @@ Saturday, 8 November 2025
 
 The rain drummed against the glass ceiling of the Mathematikum, Germany's premier mathematics museum. Inside, the sound created a steady rhythm that complemented the interactive exhibits below. Children chased iridescent spheres at the soap-bubble station while a Foucault pendulum traced silent patterns overhead, proof that the world turns whether we notice or not.
 
-> The museum hummed with the energy of discovery. It was that particular mix of frustration, curiosity, and sudden insight that characterizes both mathematical thinking and software development. Unlike conventional museums, here the abstractions of mathematics took physical form, inviting hands to touch what minds had conceived.
+The museum hummed with the energy of discovery. It was that particular mix of frustration, curiosity, and sudden insight that characterizes both mathematical thinking and software development. Unlike conventional museums, here the abstractions of mathematics took physical form, inviting hands to touch what minds had conceived.
 
 Alex Harlan stood beneath the three-meter bronze lambda sculpture, reflecting on the journey that had brought him here. Lightning from outside briefly illuminated the smooth surface, casting a lambda-shaped shadow across the marble floor. He had always been fascinated by the intersection of mathematics, philosophy, linguistics, technology and literature, and the lambda calculus was a fundamental part of that.
 
@@ -68,25 +68,25 @@ Seventy years old now. Faded navy flannel shirt with sleeves rolled once, the sa
 
 He had flown to Frankfurt from Idaho the night before, carrying nothing but a PinePhone Pro in its handmade leather case (stitched in Rice Lake, Wisconsin), a ten year old Asus fanless laptop, a notebook bound in duct tape. And a quiet certainty that this would be his last big idea.
 
-The notebook contained ideas for a Clojure-inspired {{cpp}} library for embedded systems, a concept he'd been refining for quite some time. It was a gift from Clojure to the embedded {{cpp}} development world. This gift was the power of immutable data and functional programming, brought to the constrained environment of Microcontroller Units (MCUs) without the overhead of garbage collection, heap management, or exceptions.
+The notebook contained ideas for a Clojure-inspired {{c++}} library for embedded systems, a concept he'd been refining for quite some time. It was a gift from Clojure to the embedded {{c++}} development world. This gift was the power of immutable data and functional programming, brought to the constrained environment of Microcontroller Units (MCUs) without the overhead of garbage collection, heap management, or exceptions.
 
-The notebook itself was a testament to his working style. Each page a careful mix of {{cpp}} code fragments, memory layouts drawn with mechanical precision, and the occasional philosophical note in the margins. His handwriting had remained unchanged for fifty years, neat engineer's lettering, with critical calculations circled and underlined. Several pages showed the progression of his thinking about the core data structures: first attempts, cross-outs, refinements, and finally the hopefully elegant solution he'd arrived at just last month.
+The notebook itself was a testament to his working style. Each page a careful mix of {{c++}} code fragments, memory layouts drawn with mechanical precision, and the occasional philosophical note in the margins. His handwriting had remained unchanged for fifty years, neat engineer's lettering, with critical calculations circled and underlined. Several pages showed the progression of his thinking about the core data structures: first attempts, cross-outs, refinements, and finally the hopefully elegant solution he'd arrived at just last month.
 
 He'd worked on embedded systems since the early days of his career. While much of the computing world had moved to increasingly abstract layers, MCUs still operated close to the metal, resource-constrained, real-time systems where every memory byte and CPU cycle mattered. Scale indicators, industrial controllers, medical devices, these were part of his world, a world where software wasn't just ones and zeros but directly controlled physical reality.
 
 \"One last attempt to add value before I'm obsolete,\" he'd written in an email to himself last month. \"Clojure on the metal, no heap, no exceptions, pure conversation.\"
 
-It was a mission statement as much as a technical goal. Alex had watched programming languages come, go and change over his lifetime. He'd seen FORTRAN, BASIC, APL and FORTH give way to C, {{cpp}}, Java and {{c#}}, then JavaScript and Python. He'd watched object-oriented programming rise to dominance, only to be challenged by more mathematically sound functional approaches. Through it all, embedded C and {{cpp}} had remained an industry defacto standard.
+It was a mission statement as much as a technical goal. Alex had watched programming languages come, go and change over his lifetime. He'd seen FORTRAN, BASIC, APL and FORTH give way to C, {{c++}}, Java and {{c#}}, then JavaScript and Python. He'd watched object-oriented programming rise to dominance, only to be challenged by more mathematically sound functional approaches. Through it all, embedded C and {{c++}} had remained an industry defacto standard.
 
-But defacto standards often meant stagnation. The same design patterns, the same pitfalls, the same bugs had been plaguing embedded systems for decades, and object-orientation hadn't helped much. Memory corruption. Race conditions. Buffer overflows. State management nightmares. These were complicated programming languages in a constant state of flux, which no working programmer had the time to master. The constraints of the environment had become excuses for avoiding better approaches.
+But defacto standards often meant stagnation. The same design patterns, the same pitfalls, the same bugs had been plaguing embedded systems for decades, and object-orientation hadn't helped much. Memory corruption. Race conditions. Buffer overflows. State management nightmares. {{c++}} was a complicated programming language in a constant state of flux, and most working programmers did not have the time to master it. The constraints of the environment had become excuses for avoiding better approaches.
 
 It was the kind of idea that terrified most embedded developers. Sacred cows made the best burgers, but nobody wanted to be the butcher. \"Don't fix it if it ain't broke\" was the mantra. Mutability was supposed to be essential for performance on constrained devices. Memory management needed to be manual, if present at all. When every byte and every cycle counted, functional programming was a luxury. Or so conventional wisdom claimed.
 
 But conventional wisdom rarely accounted for someone like Alex. He was a programmer who had lived long enough to see the full lifecycle of multiple programming paradigms. In the 1980s, he'd written a small project management program using a REPL-based APL system that used an IBM Selectric Teletypewriter to interact with a mainframe computer. He followed that up with implementations of the REPL-based FORTH programming language on Z80 single-board-computers and minicomputers. In the 1990s he wrote embedded C. He'd seen Java try and fail to conquer the world in the 2000s, and watched as MCUs grew more powerful while their programming models remained stubbornly unchanged.
 
-The final catalyst had been a 100,000+-line legacy {{cpp}} firmware codebase for an industrial scale indicator in 2016. It was filled with objects, global variables and complex state management. A subtle race condition, buried deep in the code, sporadically corrupted weight readings, costing the company dearly in certification delays and held shipments. After weeks of debugging a ghost, he'd finally cornered it.
+The final catalyst had been a 100,000+-line legacy C and {{c++}} firmware codebase for an industrial scale indicator in 2016. It was filled with objects, global variables and complex state management. A subtle race condition, buried deep in the code, sporadically corrupted weight readings, costing the company dearly in certification delays and held shipments. After weeks of debugging, he'd finally found and fixed the problem.
 
-\"There has to be a better way,\" he'd thought. And that's when he'd first considered bringing Clojure's ideas, immutability, pure functions, and clear separation of state and identity, to the embedded world.
+\"There has to be a better way,\" he'd thought. And that's when he'd first considered bringing Clojure's ideas of immutability, pure functions, and clear separation of state and identity, to the embedded world.
 
 How many times had he heard the refrain \"I guess you're too stupid to know you can't do that!\". Conventional wisdom had been wrong before.
 
@@ -146,7 +146,7 @@ For a moment they were united in shared technical destruction, two hackers compa
 
 \"I'm persistent too, kid.\" He couldn't help the slight Idaho drawl on 'persistent.' \"Started messing with STM32s way back. Most of us working on scale equipment were still using 8-bit MCUs back then. Still are, some places.\"
 
-\"So you've been trying to cram Clojure concepts into {{cpp}} for embedded systems since before I finished high school.\"
+\"So you've been trying to cram Clojure concepts into {{c++}} for embedded systems since before I finished high school.\"
 
 Alex nodded. \"The first attempts were...dramatic failures. Like trying to teach a raccoon to play chess. You get the idea across eventually, but there's a lot of mess along the way.\"
 
@@ -184,7 +184,7 @@ She pulled out her phone and quickly swiped to a photo. \"Here,\" she said, show
 
 \"So now you're trying to bring the same ideas to embedded?\" she asked.
 
-\"Not just trying. I think I finally have an alpha implementation.\" Alex tapped the notebook tucked under his arm. \"A lock-free, allocation-free implementation of persistent arrays using the {{cpp}} `std::array` template class. Zero heap usage, no exceptions, and non-destructive modification. And the whole thing compiles down to less than 4 KB of object code.\"
+\"Not just trying. I think I finally have an alpha implementation.\" Alex tapped the notebook tucked under his arm. \"A lock-free, allocation-free implementation of persistent arrays using the {{c++}} `std::array` template class. Zero heap usage, no exceptions, and non-destructive modification. And the whole thing compiles down to less than 4 KB of object code.\"
 
 Elena's eyebrows shot up. \"Full blown Clojure persistent data structures on MCUs? That's...\" She paused, searching for the right word. \"Impossible. You'd need structural sharing, path copying, hash array mapped tries. Even with modern MCUs, the memory constraints alone would ...\"
 
@@ -192,15 +192,15 @@ Elena's eyebrows shot up. \"Full blown Clojure persistent data structures on MCU
 
 \"Copy-on-write,\" Elena repeated, crossing her arms. \"That's hardly revolutionary. Every Computer Science undergrad learns that.\"
 
-\"True,\" Alex said, \"but I've combined it with some tricks. The secret is letting the {{cpp}} compiler's compile-time capabilities do some heavy lifting. Templates, `constexpr` and compile-time resolution handle some of the bookkeeping, and go a long way toward providing a Clojure feel to {{cpp}} code. Get the abstractions right, and the memory management almost disappears.\" \"And not only that,\" Alex continued, \"but {{cpp}} implementations of some of the Clojure core functions to demonstrate the value of Clojure capabilities in an embedded system.\"
+\"True,\" Alex said, \"but I've combined it with some tricks. The secret is letting the {{c++}} compiler's compile-time capabilities do some heavy lifting. Templates, `constexpr` and compile-time resolution handle some of the bookkeeping, and go a long way toward providing a Clojure feel to {{c++}} code. Get the abstractions right, and the memory management almost disappears.\" \"And not only that,\" Alex continued, \"but {{c++}} implementations of some of the Clojure core functions to demonstrate the value of Clojure capabilities in an embedded system.\"
 
 Elena's skepticism gave way to curiosity. \"You've got it running on real hardware? Not just simulations?\"
 
-\"Blinking LEDs and sampling sensors,\" Alex confirmed. \"But with this foundation, and more Clojure functions implemented in {{cpp}}, we can demonstrate the value of the approach in real-world scenarios. The full Clojure persistent data structures can come later.\"
+\"Blinking LEDs and sampling sensors,\" Alex confirmed. \"But with this foundation, and more Clojure functions implemented in {{c++}}, we can demonstrate the value of the approach in real-world scenarios. The full Clojure persistent data structures can come later.\"
 
 \"Show me,\" she demanded, opening her laptop right there, the glow of the screen illuminating her face in the dim museum light.
 
-Alex shook his head. \"Not quite ready for that. The code works, but it's ugly as sin. I need to clean it up, document it properly.\" He hesitated. \"And to be honest, I could use help from someone who really understands modern {{cpp}} well. I think the language has changed more in the last decade than in its previous thirty years.\"
+Alex shook his head. \"Not quite ready for that. The code works, but it's ugly as sin. I need to clean it up, document it properly.\" He hesitated. \"And to be honest, I could use help from someone who really understands modern {{c++}} well. I think the language has changed more in the last decade than in its previous thirty years.\"
 
 Elena raised an eyebrow. \"Asking for help? That's... refreshingly humble for an American.\"
 
@@ -257,7 +257,7 @@ He stepped out into the rain, shoulders squared, the first parenthesis of a new 
 
 The PinePhone Pro in his pocket buzzed with a notification. He pulled it out, rain spattering the hand-stitched leather case. A new email from elenaV@roteflora.de:
 
-alias-expand
+<pre style=\"background:#333333; padding:16px; border-radius:6px;\">
 Subject: Thursday @ Alte Stellmacherei
 
 Change your flight. I already told Raj and Kai you're coming.
@@ -326,7 +326,7 @@ Half a kilometer away, in a small apartment near the Gießen train station, Elen
 
 \"Hiding in plain sight,\" she murmured. \"All this time.\"
 
-She'd first encountered his code during her early Babashka days, but had never connected it to the anonymous contributor whose PRs to various Clojure libraries she'd been following for years. The more she dug, the more she found, small, elegant solutions to annoying problems and useful features, slipped quietly into the ecosystem without fanfare.
+She'd first encountered his code during her early Babashka days, but had never connected it to the anonymous contributor whose github.com pull requests (PRs) to various Clojure libraries she'd been following for years. The more she dug, the more she found, small, elegant solutions to annoying problems and useful features, slipped quietly into the ecosystem without fanfare.
 
 Behind her, rain streaked down the window. The purple hoodie was still drying on a radiator, the same hoodie she'd inherited from her mother in 2009, the year cancer took her.
 
@@ -366,7 +366,7 @@ Thursday we need the big oscilloscope. And the logic analyzer.
           
 And maybe fire extinguishers.
           
-We have a guest from America who claims to have a start on the persistent microcontroller problem.
+We have a guest from America who claims to have a start on the MCU persistent data problem.
 
 P.S. Order extra pizza. This one looks like he actually eats.
 </pre>
@@ -399,7 +399,7 @@ Alex thought about the two other lunatics Elena had mentioned. Raj and Kai. He p
 
 Raj Patel. Quantum physicist, currently at TU Darmstadt. Several papers on topological quantum computing and Majorana zero modes. Young, brilliant, with a reputation for working barefoot even in the lab, a quirk that had earned him the nickname \"the quantum monk\" among peers.
 
-Kai Le. Hardware engineer extraordinaire. Vietnamese background. Special focus on ultra-low-power embedded {{cpp}} systems. He was famous for a demonstration where he'd flown a drone for 72 hours on a single charge by implementing a novel memory management algorithm. A string of posts on the STM32 forums showed he'd been trying similar approaches to Alex's, but hitting the same walls.
+Kai Le. Hardware engineer extraordinaire. Vietnamese background. Special focus on ultra-low-power embedded {{c++}} systems. He was famous for a demonstration where he'd flown a drone for 72 hours on a single charge by implementing a novel memory management algorithm. A string of posts on the STM32 forums showed he'd been trying similar approaches to Alex's, but hitting the same walls.
 
 Interesting company Elena kept. They certainly weren't conventional thinkers. But then, conventional thinking rarely led to valuable progress.
 
@@ -437,7 +437,7 @@ Bring him to the barn. We have a spare oscilloscope.
 
 She set her phone down and turned back to her code. A new approach was forming in her mind, inspired by what Alex had described. If he was right about compile-time handling some of the heavy lifting...
 
-She opened the Neovim editor in a new terminal window and began crafting a {{cpp}} template class that could serve as a foundational piece.
+She opened the Neovim editor in a new terminal window and began crafting a {{c++}} template class that could serve as a foundational piece.
 
 She stared at the code, chewing her lip. This wouldn't work on a microcontroller, `std::shared_ptr` meant dynamic allocation. But it captured the essence of what Alex might be attempting with his copy-on-write approach.
 
@@ -447,12 +447,13 @@ The clock on her screen showed 3:14 AM. Outside, the rain had finally stopped. S
 
 In two different locations, separated by half a kilometer, two programmers worked through the night. One with decades of experience, one with raw talent and determination. Both driven by the same vision: a world where software remembered, where history wasn't constantly overwritten, where the past and future could coexist in the same persistent timeline.
 
-Two parentheses, opening but not yet closed, the beginning of a conversation that would reshape embedded computing forever.
+Two parentheses, opened but not yet closed, the beginning of a conversation that would reshape embedded computing forever.
 
 ---
 "))
 
-(def cljonic "Clojure's laconic gift to embedded developers")
+(def cljonic ;; /klə-jŏn′ĭk/
+  "Clojure's laconic gift to embedded developers")
 
 ;; ;; Elena Voss has joined the REPL
 
