@@ -444,7 +444,7 @@ Could she modify it to use static allocation only? What if...
 
 The clock on her screen showed 3:14 AM. Outside, the rain had finally stopped. She deleted everything and started over, this time with a lower-level approach that just might work on an MCU.
 
-In two different locations, separated by half a kilometer, two programmers worked through the night. One with decades of experience, one with raw talent and determination. Both driven by the same vision: a world where software remembered, where history wasn't constantly overwritten, where the past and future could coexist in the same persistent timeline.
+In two different locations, separated by half a kilometer, two programmers worked through the night. One with decades of experience, one with raw talent and determination. Both driven by the same vision: a world where software remembers, where history isn't constantly overwritten, where the past and future coexist in the same persistent timeline.
 
 Two parentheses, opened but not yet closed, the beginning of a conversation that would reshape embedded computing forever.
 "))
