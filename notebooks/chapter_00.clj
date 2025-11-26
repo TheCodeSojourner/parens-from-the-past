@@ -2,11 +2,11 @@
 (ns chapter-00
   (:require [scicloj.kindly.v4.kind :as kind]))
 
-;; # Parens From The Past
+;; # A Laconic Odyssey
 
 (kind/hiccup
  [:div
-  [:h1 "A Laconic Odyssey"]
+  [:h1 "Parens From The Past"]
   [:blockquote
    [:div {:style {:font-size "2em", :font-weight :bold}} "Laconic"]
    [:div "/ləˈkɒnɪk/"]

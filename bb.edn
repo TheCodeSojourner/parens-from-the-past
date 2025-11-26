@@ -1,0 +1,8 @@
+{:tasks
+ {:requires ([babashka.process :refer [process]])
+
+  browse {:doc "- Browse novel in a firefox browser private window"
+          :task (process "firefox" "--private-window" "docs/index.html")}
+
+  render {:doc "- Render novel using clay/quarto"
+          :task (shell "clojure" "-X:render")}}}

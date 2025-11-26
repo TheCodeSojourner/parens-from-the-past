@@ -13,11 +13,11 @@ format:
 </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" type="text/javascript"></script>
 
-# Parens From The Past
+# A Laconic Odyssey
 
 
 ```{=html}
-<div><h1>A Laconic Odyssey</h1><blockquote><div style="font-size:2em;font-weight:bold;">Laconic</div><div>/ləˈkɒnɪk/</div><div style="font-style:italic;">adjective</div><br /><div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div></blockquote><img alt="Cljonic" src="notebooks/images/logo.png" style="display:block;height:auto;margin-left:auto;margin-right:auto;width:50%;" /></div>
+<div><h1>Parens From The Past</h1><blockquote><div style="font-size:2em;font-weight:bold;">Laconic</div><div>/ləˈkɒnɪk/</div><div style="font-style:italic;">adjective</div><br /><div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div></blockquote><img alt="Cljonic" src="notebooks/images/logo.png" style="display:block;height:auto;margin-left:auto;margin-right:auto;width:50%;" /></div>
 ```
 
 

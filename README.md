@@ -1,25 +1,19 @@
 # Parens From The Past: A Laconic Odyssey
 
-<table style="width: 100%;">
-  <tr>
-    <td style="width: 50%; padding-right: 1em; text-align: center;">
-      <img src="notebooks/images/logo.png" alt="Cljonic" style="display: block; margin: 0 auto; height: 12em;">
-    </td>
-    <td style="width: 50%; padding-left: 1em; vertical-align: middle;">
-      <blockquote>
-        <div style="font-size: 2em; font-weight: bold;">Laconic</div>
-        <div>/ləˈkɒnɪk/</div>
-        <div style="font-style: italic;">adjective</div>
-        <br>
-        <div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div>
-      </blockquote>
-    </td>
-  </tr>
-</table>
+ <div style="width: 100%">
+   <img src="notebooks/images/logo.png" alt="Cljonic" style="display: block; margin: 2em auto; height: 12em;">
+   <blockquote>
+     <div style="font-size: 2em; font-weight: bold;">Laconic</div>
+     <div>/ləˈkɒnɪk/</div>
+     <div style="font-style: italic;">adjective</div>
+     <br>
+     <div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div>
+   </blockquote>
+ </div>  
 
 ## Overview
 
-**Parens from the Past: A Laconic Odyssey** is a novel that attempts to demystify programming in general, encourages readers to experiment with the Clojure programming language, and celebrates human creativity alongside respectful, meaningful dialogue.
+**Parens from the Past: A Laconic Odyssey** is a novel that seeks to demystify programming and encourage readers to explore Clojure, and celebrates human creativity through respectful and meaningful dialogue.
 
 ## Technology
 
@@ -32,15 +26,20 @@ The novel is authored using **Clojure**, a functional programming language known
 - **Clay**: A Clojure library for creating literate-programming-style notebooks and documents. The content resides in the `notebooks/` directory as `.clj` files, blending prose with executable Clojure code to illustrate concepts dynamically. [GitHub](https://github.com/scicloj/clay) | [Documentation](https://scicloj.github.io/clay/)
 
 ### Rendering the Novel
-The notebooks are rendered into a static website using [Quarto](https://quarto.org/), a multi-format publishing system, via Clay.
+The notebooks are rendered into a static website using [Quarto](https://quarto.org/), a multi-format publishing system, via Clay. A **Babashka** script is used to provide automation tasks.
 
 - **Clay Configuration** (`clay.edn`): 
   - Processes notebooks from `notebooks/` into Quarto Markdown (`.qmd`) files.
   - Outputs HTML to the `docs/` directory.
+- **Babashka Tasks** (`bb.edn`): 
+  - In a terminal, execute `bb tasks` to get a list of available tasks.
+  - Task: `browse` will open the `firefox` browser with the `index.html` page created by the `render` task.
+  - Task: `render` will use `clay` to render the novel to `quarto` static HTML.
 
 This setup allows the novel to be read as an interactive, web-based book, with multiple chapters each in its own `.html` file. The rendering emphasizes readability while preserving the educational and philosophical essence of the content.
 
 ### Tooling
+- **Babashka**: A native Clojure interpreter for scripting with fast startup.
 - **Calva**: A Clojure extension for VS Code, providing REPL integration and code editing support.
 - **Calva Power Tools**: Extensions enhancing Calva's capabilities for advanced Clojure development.
 - **Cline**: An AI assistant extension for VS Code, aiding in software development tasks with natural language understanding capabilities.

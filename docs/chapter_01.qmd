@@ -235,7 +235,7 @@ Behind Elena, the glass wall of the exhibit was fogging up from the contrast bet
 
 ::: {.sourceClojure}
 ```clojure
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 ```
 :::
@@ -294,7 +294,7 @@ Before leaving, he glanced back one more time at the Clojure definition he'd wri
 
 ::: {.sourceClojure}
 ```clojure
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 ```
 :::
@@ -340,7 +340,7 @@ The last thing he saw before closing his laptop was the repository he'd just cre
 
 ::: {.sourceClojure}
 ```clojure
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 ```
 :::
@@ -375,14 +375,11 @@ She opened her terminal and typed:
 
 ::: {.sourceClojure}
 ```clojure
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 ```
 :::
 
-
-
-#'user/cljonic
 
 
 The REPL responded, accepting the definition. Simple, elegant, persistent.
@@ -418,13 +415,13 @@ Elena typed a second line:
 
 ::: {.sourceClojure}
 ```clojure
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 ```
 :::
 
 
-;; Elena Voss has joined the REPL
+; Elena Voss has joined the REPL
 
 
 The statement felt like a commitment. A tiny declaration that something important had begun.
@@ -494,22 +491,30 @@ Two parentheses, opened but not yet closed, the beginning of a conversation that
 ---
 
 
+Clojure line comments start with a line's first `;`, and continue to the line's end.
+
+Clojure `def`: a named immutable value, not an assignable place (i.e., a variable),
+
 
 ::: {.sourceClojure}
 ```clojure
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 ```
 :::
 
 
-;; Elena Voss has joined the REPL
+
+Persistent Echos: 
+          
+* Using Clojure `vector` collection (e.g., `[1 0 4]`)
+* `conj` function conjoins a value to a collection, non-destructively creating a new collection
+
 
 
 ::: {.sourceClojure}
 ```clojure
-(defn copy-on-write [old new-val]
-  (assoc old :val new-val :history (conj (:history old) (:val old))))
+(def echo0 [0])
 ```
 :::
 
@@ -517,7 +522,33 @@ Two parentheses, opened but not yet closed, the beginning of a conversation that
 
 ::: {.sourceClojure}
 ```clojure
-(copy-on-write {:val 1 :history []} 2)
+(def echo1 (conj echo0 1))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(def echo2 (conj echo1 2))
+```
+:::
+
+
+
+::: {.sourceClojure}
+```clojure
+(def echo3 (conj echo2 3))
+```
+:::
+
+
+Vector, like all Clojure collections, are immutable. 
+
+
+::: {.sourceClojure}
+```clojure
+echo0
 ```
 :::
 
@@ -525,57 +556,8 @@ Two parentheses, opened but not yet closed, the beginning of a conversation that
 
 ::: {.printedClojure}
 ```clojure
-{:val 2, :history [1]}
+[0]
 
-```
-:::
-
-
-
-::: {.sourceClojure}
-```clojure
-(defn obsolete? [_] false)
-```
-:::
-
-
-
-::: {.sourceClojure}
-```clojure
-(obsolete? (copy-on-write {:val "Alex" :history []} "Persistence"))
-```
-:::
-
-
-
-::: {.printedClojure}
-```clojure
-false
-
-```
-:::
-
-
-
-::: {.sourceClojure}
-```clojure
-(def echo1 (copy-on-write {:val "Church" :history []} "McCarthy"))
-```
-:::
-
-
-
-::: {.sourceClojure}
-```clojure
-(def echo2 (copy-on-write echo1 "Hickey"))
-```
-:::
-
-
-
-::: {.sourceClojure}
-```clojure
-(def echo3 (copy-on-write echo2 "cljonic"))
 ```
 :::
 
@@ -591,7 +573,7 @@ echo1
 
 ::: {.printedClojure}
 ```clojure
-{:val "McCarthy", :history ["Church"]}
+[0 1]
 
 ```
 :::
@@ -608,7 +590,7 @@ echo2
 
 ::: {.printedClojure}
 ```clojure
-{:val "Hickey", :history ["Church" "McCarthy"]}
+[0 1 2]
 
 ```
 :::
@@ -625,14 +607,7 @@ echo3
 
 ::: {.printedClojure}
 ```clojure
-{:val "cljonic", :history ["Church" "McCarthy" "Hickey"]}
+[0 1 2 3]
 
 ```
 :::
-
-
-;; Now THAT'S persistence - a complete, immutable history
-
-;; But can a 32kB MCU handle this?
-
-;; Thursday, we'll find out.

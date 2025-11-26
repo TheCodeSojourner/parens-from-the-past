@@ -4,7 +4,7 @@
             [scicloj.kindly.v4.api :as kindly]
             [scicloj.kindly.v4.kind :as kind]))
 
-;; ## The Wet Lambda
+; ## The Wet Lambda
 
 (kind/md (alias-expand "
 <br>
@@ -223,7 +223,7 @@ Alex blinked. \"I'm supposed to be on a plane Tuesday.\"
 Behind Elena, the glass wall of the exhibit was fogging up from the contrast between the warm interior and the cold rain outside. Alex reached out and swept a clear stripe across the fogged glass panel beneath the sculpture. With one finger he wrote the Clojure definition that would outlive them both:
 "))
 
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 
 (kind/md "
@@ -276,7 +276,7 @@ Alex smiled and slipped the phone back into his pocket. Maybe his last big idea 
 Before leaving, he glanced back one more time at the Clojure definition he'd written in the condensation. It was still there, defying the entropy of evaporation:
 ")
 
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 
 (kind/md "
@@ -316,7 +316,7 @@ Alex let go of his worry as he tried to fall sleep. Tomorrow he would change his
 The last thing he saw before closing his laptop was the repository he'd just created, empty except for a README.md file containing that first Clojure definition:
 ")
 
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 
 (kind/md "
@@ -345,9 +345,8 @@ Elena's fingers tapped a quick rhythm on her laptop, a habit from her teenage co
 She opened her terminal and typed:
 ")
 
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
-;; #'user/cljonic
 
 (kind/md "
 The REPL responded, accepting the definition. Simple, elegant, persistent.
@@ -380,9 +379,9 @@ She turned back to her REPL session. The cursor blinked, waiting patiently for t
 Elena typed a second line:
 ")
 
-(def cljonic ;; /klə-jŏn′ĭk/
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
-;; ;; Elena Voss has joined the REPL
+; ; Elena Voss has joined the REPL
 
 (kind/md (alias-expand "
 The statement felt like a commitment. A tiny declaration that something important had begun.
@@ -452,34 +451,27 @@ Two parentheses, opened but not yet closed, the beginning of a conversation that
 ---
 "))
 
-(def cljonic ;; /klə-jŏn′ĭk/
+; Clojure line comments start with a line's first `;`, and continue to the line's end.
+
+; Clojure `def`: a named immutable value, not an assignable place (i.e., a variable),
+(def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 
-;; ;; Elena Voss has joined the REPL
+(kind/md "
+Persistent Echos: 
+          
+* Using Clojure `vector` collection (e.g., `[1 0 4]`)
+* `conj` function conjoins a value to a collection, non-destructively creating a new collection
+")
 
-(defn copy-on-write [old new-val]
-  (assoc old :val new-val :history (conj (:history old) (:val old))))
+(def echo0 [0])
+(def echo1 (conj echo0 1))
+(def echo2 (conj echo1 2))
+(def echo3 (conj echo2 3))
 
-(copy-on-write {:val 1 :history []} 2)
+; Vector, like all Clojure collections, are immutable. 
 
-(defn obsolete? [_] false)
-
-(obsolete? (copy-on-write {:val "Alex" :history []} "Persistence"))
-
-(def echo1 (copy-on-write {:val "Church" :history []} "McCarthy"))
-
-(def echo2 (copy-on-write echo1 "Hickey"))
-
-(def echo3 (copy-on-write echo2 "cljonic"))
-
+echo0
 echo1
-
 echo2
-
 echo3
-
-;; ;; Now THAT'S persistence - a complete, immutable history
-
-;; ;; But can a 32kB MCU handle this?
-
-;; ;; Thursday, we'll find out.
