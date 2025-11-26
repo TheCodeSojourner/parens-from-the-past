@@ -1,7 +1,6 @@
 # Parens From The Past: A Laconic Odyssey
 
  <div style="width: 100%">
-   <img src="notebooks/images/logo.png" alt="Cljonic" style="display: block; margin: 2em auto; height: 12em;">
    <blockquote>
      <div style="font-size: 2em; font-weight: bold;">Laconic</div>
      <div>/ləˈkɒnɪk/</div>
@@ -9,6 +8,7 @@
      <br>
      <div>Expressing much in few words; brief and pithy; concise to the point of seeming mysterious.</div>
    </blockquote>
+   <img src="notebooks/images/logo.png" alt="Cljonic" style="display: block; margin: 2em auto; height: 12em;">
  </div>  
 
 ## Overview

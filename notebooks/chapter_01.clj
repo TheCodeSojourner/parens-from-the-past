@@ -447,13 +447,14 @@ The clock on her screen showed 3:14 AM. Outside, the rain had finally stopped. S
 In two different locations, separated by half a kilometer, two programmers worked through the night. One with decades of experience, one with raw talent and determination. Both driven by the same vision: a world where software remembered, where history wasn't constantly overwritten, where the past and future could coexist in the same persistent timeline.
 
 Two parentheses, opened but not yet closed, the beginning of a conversation that would reshape embedded computing forever.
-
----
 "))
+
+(kind/hiccup
+ [:h2 "Let's learn a little Clojure!"])
 
 ; Clojure line comments start with a line's first `;`, and continue to the line's end.
 
-; Clojure `def`: a named immutable value, not an assignable place (i.e., a variable),
+; Clojure `def`: a named immutable value, not an assignable place (i.e., a variable).
 (def cljonic ; /klə-jŏn′ĭk/
   "Clojure's laconic gift to embedded developers")
 
@@ -464,14 +465,16 @@ Persistent Echos:
 * `conj` function conjoins a value to a collection, non-destructively creating a new collection
 ")
 
-(def echo0 [0])
-(def echo1 (conj echo0 1))
-(def echo2 (conj echo1 2))
-(def echo3 (conj echo2 3))
+(def echo-0 [0])
+(def echo-1 (conj echo-0 1))
+(def echo-2 (conj echo-1 2))
+(def echo-3 (conj echo-2 3))
 
-; Vector, like all Clojure collections, are immutable. 
+; Vector, like all Clojure collections, is immutable. 
 
-echo0
-echo1
-echo2
-echo3
+echo-0
+echo-1
+echo-2
+echo-3
+
+; Note: Many non-alphanumeric characters, like `-`, can be used in Clojure names.

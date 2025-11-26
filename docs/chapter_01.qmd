@@ -488,12 +488,16 @@ In two different locations, separated by half a kilometer, two programmers worke
 
 Two parentheses, opened but not yet closed, the beginning of a conversation that would reshape embedded computing forever.
 
----
+
+
+```{=html}
+<h2>Let's learn a little Clojure!</h2>
+```
 
 
 Clojure line comments start with a line's first `;`, and continue to the line's end.
 
-Clojure `def`: a named immutable value, not an assignable place (i.e., a variable),
+Clojure `def`: a named immutable value, not an assignable place (i.e., a variable).
 
 
 ::: {.sourceClojure}
@@ -514,7 +518,7 @@ Persistent Echos:
 
 ::: {.sourceClojure}
 ```clojure
-(def echo0 [0])
+(def echo-0 [0])
 ```
 :::
 
@@ -522,7 +526,7 @@ Persistent Echos:
 
 ::: {.sourceClojure}
 ```clojure
-(def echo1 (conj echo0 1))
+(def echo-1 (conj echo-0 1))
 ```
 :::
 
@@ -530,7 +534,7 @@ Persistent Echos:
 
 ::: {.sourceClojure}
 ```clojure
-(def echo2 (conj echo1 2))
+(def echo-2 (conj echo-1 2))
 ```
 :::
 
@@ -538,17 +542,17 @@ Persistent Echos:
 
 ::: {.sourceClojure}
 ```clojure
-(def echo3 (conj echo2 3))
+(def echo-3 (conj echo-2 3))
 ```
 :::
 
 
-Vector, like all Clojure collections, are immutable. 
+Vector, like all Clojure collections, is immutable. 
 
 
 ::: {.sourceClojure}
 ```clojure
-echo0
+echo-0
 ```
 :::
 
@@ -565,7 +569,7 @@ echo0
 
 ::: {.sourceClojure}
 ```clojure
-echo1
+echo-1
 ```
 :::
 
@@ -582,7 +586,7 @@ echo1
 
 ::: {.sourceClojure}
 ```clojure
-echo2
+echo-2
 ```
 :::
 
@@ -599,7 +603,7 @@ echo2
 
 ::: {.sourceClojure}
 ```clojure
-echo3
+echo-3
 ```
 :::
 
@@ -611,3 +615,6 @@ echo3
 
 ```
 :::
+
+
+Note: Many non-alphanumeric characters, like `-`, can be used in Clojure names.
