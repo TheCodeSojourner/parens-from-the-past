@@ -38,6 +38,8 @@
 > 
 > From Church to McCarthy to Hickey, a chain of thought would form around a radical idea: computation as transformation rather than mutation, values rather than places in memory. At each link in this chain, the identity function would remain as a silent guardian of consistency.
 
+## Under the Lambda
+
 **Mathematikum, Gießen, Germany**  
 Saturday, 8 November 2025  
 14:27
@@ -90,6 +92,8 @@ The final catalyst had been a 100,000+-line legacy C and {{c++}} firmware codeba
 
 How many times had he heard the refrain \"I guess you're too stupid to know you can't do that!\". Conventional wisdom had been wrong before.
 
+## Copy-on-Write is Time Travel
+
 A voice beside him, low and amused, Hamburg accent thick enough to spread on rye bread, interrupted his thoughts.
 
 \"Copy-on-write is just time travel with extra steps.\"
@@ -130,6 +134,8 @@ Elena nodded slowly, something like respect flickering across her features. \"My
 
 \"She would've called your idea crazy, though,\" Elena added with a grin.
 
+## War Stories
+
 She tilted her chin at the lambda sculpture, the purple lambda tattoo on her forearm briefly visible as her sleeve shifted. \"Ever tried persistent collections on a 32 kB MCU?\"
 
 \"Every Thursday night for two decades,\" Alex admitted. \"Ends the same way: smoke, groans, and a quiet apology to Rich Hickey.\"
@@ -161,6 +167,8 @@ Elena's expression had lost its edge of mockery, replaced by something harder to
 \"Rich has a gift for clarity,\" Alex agreed. \"He put words to problems I'd been struggling with since my punch-card days.\"
 
 Elena laughed, bright, sudden and unstoppable, the kind of laugh that makes strangers turn and smile without knowing why. It filled the space beneath the sculpture, bouncing off the bronze and glass.
+
+## The Warehouse That Remembered
 
 \"I just realized who you are,\" she said. \"You're the guy who did that Clojure implementation for cloud-based scale indicators! I used your transducer library for a warehousing project in Leipzig in 2016.\"
 
@@ -219,6 +227,8 @@ Elena laughed again, but there was an edge to it now. \"You Americans are all th
 Alex blinked. \"I'm supposed to be on a plane Tuesday.\"
 
 \"Change it,\" she said, with the complete confidence of someone unused to being refused. \"Thursday is when we meet. Pizza arrives at 20:02, exactly 32 minutes after doors open. It's tradition.\"
+
+## Clojure in Condensation
 
 Behind Elena, the glass wall of the exhibit was fogging up from the contrast between the warm interior and the cold rain outside. Alex reached out and swept a clear stripe across the fogged glass panel beneath the sculpture. With one finger he wrote the Clojure definition that would outlive them both:
 "))
@@ -282,8 +292,8 @@ Before leaving, he glanced back one more time at the Clojure definition he'd wri
 (kind/md "
 A Clojure definition that might just change embedded programming forever, if the universe was kind. And if not, well, at least they'd survived the rain.
 
----
-
+## Git Never Forgets
+          
 Back in his hotel room that evening, Alex opened his laptop and created a new GitHub repository. The commit message was brief but precise, a developer's way of marking a moment in time. His finger hovered over the \"Create repository\" button for just a moment before pressing it.
 
 <pre style=\"background:#333333; padding:16px; border-radius:6px;\">
@@ -320,8 +330,9 @@ The last thing he saw before closing his laptop was the repository he'd just cre
   "Clojure's laconic gift to embedded developers")
 
 (kind/md "
----
 
+## Two Terminals, One Vision
+          
 Half a kilometer away, in a small apartment near the Gießen train station, Elena Voss was also looking at her screen, the blue light reflecting off her face as she scrolled through Alex's GitHub history.
 
 \"Hiding in plain sight,\" she murmured. \"All this time.\"
@@ -447,10 +458,9 @@ The clock on her screen showed 3:14 AM. Outside, the rain had finally stopped. S
 In two different locations, separated by half a kilometer, two programmers worked through the night. One with decades of experience, one with raw talent and determination. Both driven by the same vision: a world where software remembers, where history isn't constantly overwritten, where the past and future coexist in the same persistent timeline.
 
 Two parentheses, opened but not yet closed, the beginning of a conversation that would reshape embedded computing forever.
-"))
 
-(kind/hiccup
- [:h2 "Let's learn a little Clojure!"])
+## Let's Learn a Little Clojure!
+"))
 
 ; Clojure line comments start with a line's first `;`, and continue to the line's end.
 

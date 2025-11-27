@@ -178,8 +178,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#under-the-lambda" id="toc-under-the-lambda" class="nav-link active" data-scroll-target="#under-the-lambda"><span class="header-section-number">2.1</span> Under the Lambda</a></li>
+  <li><a href="#copy-on-write-is-time-travel" id="toc-copy-on-write-is-time-travel" class="nav-link" data-scroll-target="#copy-on-write-is-time-travel"><span class="header-section-number">2.2</span> Copy-on-Write is Time Travel</a></li>
+  <li><a href="#war-stories" id="toc-war-stories" class="nav-link" data-scroll-target="#war-stories"><span class="header-section-number">2.3</span> War Stories</a></li>
+  <li><a href="#the-warehouse-that-remembered" id="toc-the-warehouse-that-remembered" class="nav-link" data-scroll-target="#the-warehouse-that-remembered"><span class="header-section-number">2.4</span> The Warehouse That Remembered</a></li>
+  <li><a href="#clojure-in-condensation" id="toc-clojure-in-condensation" class="nav-link" data-scroll-target="#clojure-in-condensation"><span class="header-section-number">2.5</span> Clojure in Condensation</a></li>
+  <li><a href="#git-never-forgets" id="toc-git-never-forgets" class="nav-link" data-scroll-target="#git-never-forgets"><span class="header-section-number">2.6</span> Git Never Forgets</a></li>
+  <li><a href="#two-terminals-one-vision" id="toc-two-terminals-one-vision" class="nav-link" data-scroll-target="#two-terminals-one-vision"><span class="header-section-number">2.7</span> Two Terminals, One Vision</a></li>
+  <li><a href="#lets-learn-a-little-clojure" id="toc-lets-learn-a-little-clojure" class="nav-link" data-scroll-target="#lets-learn-a-little-clojure"><span class="header-section-number">2.8</span> Let’s Learn a Little Clojure!</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -232,6 +245,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Rich Hickey</strong> would extend these ideas into Clojure, a programming language where data structures themselves became persistent and immutable.</p>
 <p>From Church to McCarthy to Hickey, a chain of thought would form around a radical idea: computation as transformation rather than mutation, values rather than places in memory. At each link in this chain, the identity function would remain as a silent guardian of consistency.</p>
 </blockquote>
+<section id="under-the-lambda" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="under-the-lambda"><span class="header-section-number">2.1</span> Under the Lambda</h2>
 <p><strong>Mathematikum, Gießen, Germany</strong><br>
 Saturday, 8 November 2025<br>
 14:27</p>
@@ -259,6 +274,9 @@ Saturday, 8 November 2025<br>
 <p>The final catalyst had been a 100,000+-line legacy C and <span style="white-space: nowrap;">C++</span> firmware codebase for an industrial scale indicator in 2016. It was filled with objects, global variables and complex state management. A subtle race condition, buried deep in the code, sporadically corrupted weight readings, costing the company dearly in certification delays and held shipments. After weeks of debugging, he’d finally found and fixed the problem.</p>
 <p>“There has to be a better way,” he’d thought. And that’s when he’d first considered bringing Clojure’s ideas of immutability, pure functions, and clear separation of state and identity, to the embedded world.</p>
 <p>How many times had he heard the refrain “I guess you’re too stupid to know you can’t do that!”. Conventional wisdom had been wrong before.</p>
+</section>
+<section id="copy-on-write-is-time-travel" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="copy-on-write-is-time-travel"><span class="header-section-number">2.2</span> Copy-on-Write is Time Travel</h2>
 <p>A voice beside him, low and amused, Hamburg accent thick enough to spread on rye bread, interrupted his thoughts.</p>
 <p>“Copy-on-write is just time travel with extra steps.”</p>
 <p>He turned.</p>
@@ -279,6 +297,9 @@ Saturday, 8 November 2025<br>
 <p>Elena nodded slowly, something like respect flickering across her features. “My grandmother was like that. Ran a machine shop until she was 82. Said idle hands were just wasted tools.”</p>
 <p>“Smart woman.”</p>
 <p>“She would’ve called your idea crazy, though,” Elena added with a grin.</p>
+</section>
+<section id="war-stories" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="war-stories"><span class="header-section-number">2.3</span> War Stories</h2>
 <p>She tilted her chin at the lambda sculpture, the purple lambda tattoo on her forearm briefly visible as her sleeve shifted. “Ever tried persistent collections on a 32 kB MCU?”</p>
 <p>“Every Thursday night for two decades,” Alex admitted. “Ends the same way: smoke, groans, and a quiet apology to Rich Hickey.”</p>
 <p>Her eyebrows shot up. “You blew up MCUs? Like, literally smoke?”</p>
@@ -295,6 +316,9 @@ Saturday, 8 November 2025<br>
 <p>“When I first read Hickey’s ‘Are We There Yet?’ talk transcript, I thought he’d been reading my personal blog posts,” she said. “All that stuff about identity, state, and values. About how we’ve been doing it wrong for decades.” She shook her head. “I was coding in a squat in Hamburg, running Clojure on a stolen ThinkPad. The idea that someone could articulate what was wrong with software so precisely…it was like finding out you’re not crazy after all.”</p>
 <p>“Rich has a gift for clarity,” Alex agreed. “He put words to problems I’d been struggling with since my punch-card days.”</p>
 <p>Elena laughed, bright, sudden and unstoppable, the kind of laugh that makes strangers turn and smile without knowing why. It filled the space beneath the sculpture, bouncing off the bronze and glass.</p>
+</section>
+<section id="the-warehouse-that-remembered" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="the-warehouse-that-remembered"><span class="header-section-number">2.4</span> The Warehouse That Remembered</h2>
 <p>“I just realized who you are,” she said. “You’re the guy who did that Clojure implementation for cloud-based scale indicators! I used your transducer library for a warehousing project in Leipzig in 2016.”</p>
 <p>“Small world,” Alex said, trying to hide his surprise. His scale management software had been a niche product for a niche industry. The odds of running into someone who’d used it, in a mathematics museum in Germany, were astronomically small. Astronomically small, like a tornado sweeping through a junkyard and assembling a fully functional Boeing 747.</p>
 <p>“Your code saved that warehouse,” Elena said. “They were going to switch to SAP, which would have meant laying off half the staff. My Babashka Clojure script proved they could keep their old system if they just modernized the interface.” Her eyes gleamed. “It made me something of a legend in certain circles.”</p>
@@ -324,6 +348,9 @@ Saturday, 8 November 2025<br>
 <p>Elena laughed again, but there was an edge to it now. “You Americans are all the same. You think Europe is just castles and beer.” She closed her laptop decisively. “Thursday, then. Bensheim. Alte Stellmacherei hacker space, 19:30. There’ll be two more lunatics there who also believe gifts should be free.”</p>
 <p>Alex blinked. “I’m supposed to be on a plane Tuesday.”</p>
 <p>“Change it,” she said, with the complete confidence of someone unused to being refused. “Thursday is when we meet. Pizza arrives at 20:02, exactly 32 minutes after doors open. It’s tradition.”</p>
+</section>
+<section id="clojure-in-condensation" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="clojure-in-condensation"><span class="header-section-number">2.5</span> Clojure in Condensation</h2>
 <p>Behind Elena, the glass wall of the exhibit was fogging up from the contrast between the warm interior and the cold rain outside. Alex reached out and swept a clear stripe across the fogged glass panel beneath the sculpture. With one finger he wrote the Clojure definition that would outlive them both:</p>
 <div class="sourceClojure">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> cljonic </span><span class="co">; /klə-jŏn′ĭk/</span></span>
@@ -363,7 +390,9 @@ P.S. Bring the notebook. All of it.
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Clojure's laconic gift to embedded developers"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>A Clojure definition that might just change embedded programming forever, if the universe was kind. And if not, well, at least they’d survived the rain.</p>
-<hr>
+</section>
+<section id="git-never-forgets" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="git-never-forgets"><span class="header-section-number">2.6</span> Git Never Forgets</h2>
 <p>Back in his hotel room that evening, Alex opened his laptop and created a new GitHub repository. The commit message was brief but precise, a developer’s way of marking a moment in time. His finger hovered over the “Create repository” button for just a moment before pressing it.</p>
 <pre style="background:#333333; padding:16px; border-radius:6px;">commit 47790793db4ba8dc817f78f7c50f72fe7997a092 (HEAD -&gt; main, origin/main)
 Author: Alex Harlan <alex.harlan@cljonic.dev>
@@ -389,7 +418,9 @@ Date:   Sat Nov 8 14:27:00 2025 +0100
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode clojure code-with-copy"><code class="sourceCode clojure"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(<span class="bu">def</span><span class="fu"> cljonic </span><span class="co">; /klə-jŏn′ĭk/</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Clojure's laconic gift to embedded developers"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<hr>
+</section>
+<section id="two-terminals-one-vision" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="two-terminals-one-vision"><span class="header-section-number">2.7</span> Two Terminals, One Vision</h2>
 <p>Half a kilometer away, in a small apartment near the Gießen train station, Elena Voss was also looking at her screen, the blue light reflecting off her face as she scrolled through Alex’s GitHub history.</p>
 <p>“Hiding in plain sight,” she murmured. “All this time.”</p>
 <p>She’d first encountered his code during her early Babashka days, but had never connected it to the anonymous contributor whose github.com pull requests (PRs) to various Clojure libraries she’d been following for years. The more she dug, the more she found, small, elegant solutions to annoying problems and useful features, slipped quietly into the ecosystem without fanfare.</p>
@@ -461,7 +492,9 @@ Bring him to the barn. We have a spare oscilloscope.
 <p>The clock on her screen showed 3:14 AM. Outside, the rain had finally stopped. She deleted everything and started over, this time with a lower-level approach that just might work on an MCU.</p>
 <p>In two different locations, separated by half a kilometer, two programmers worked through the night. One with decades of experience, one with raw talent and determination. Both driven by the same vision: a world where software remembers, where history isn’t constantly overwritten, where the past and future coexist in the same persistent timeline.</p>
 <p>Two parentheses, opened but not yet closed, the beginning of a conversation that would reshape embedded computing forever.</p>
-<h2 class="anchored">Let's learn a little Clojure!</h2>
+</section>
+<section id="lets-learn-a-little-clojure" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="lets-learn-a-little-clojure"><span class="header-section-number">2.8</span> Let’s Learn a Little Clojure!</h2>
 <p>Clojure line comments start with a line’s first <code>;</code>, and continue to the line’s end.</p>
 <p>Clojure <code>def</code>: a named immutable value, not an assignable place (i.e., a variable).</p>
 <div class="sourceClojure">
@@ -513,6 +546,7 @@ Bring him to the barn. We have a spare oscilloscope.
 <p>Note: Many non-alphanumeric characters, like <code>-</code>, can be used in Clojure names.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
