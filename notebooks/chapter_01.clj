@@ -488,3 +488,5 @@ echo-2
 echo-3
 
 ; Note: Many non-alphanumeric characters, like `-`, can be used in Clojure names.
+
+; Important: Each successive echo shares values with its predecessor. Copying, if any, is minimized. Clojure's data structures are said to be "Persistent Data Structures" that use "Structural Sharing" to minimize copying. 
