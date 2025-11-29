@@ -29,7 +29,7 @@ format:
 > 
 > `λx.x`
 > 
-> Four symbols. The Greek letter lambda, a variable, a dot, and the same variable again. The identity function, input becomes output, unchanged. In this elegant notation, which would later be called "The Lambda Calculus," he had captured something essential about computation itself: given any input, the identity function would return exactly that input.
+> Four symbols. The Greek letter lambda, a variable, a dot, and the same variable again. The identity function, input becomes output, unchanged. In this elegant notation, which would later be called the lambda calculus, he had captured something essential about computation itself: given any input, the identity function would return exactly that input.
 > 
 > Church set down his pencil, unaware that this deceptively simple expression would one day help shape programming languages that would power everything from spacecraft to children's toys. 
 >
@@ -57,7 +57,7 @@ The rain drummed against the glass ceiling of the Mathematikum, Germany's premie
 
 The museum hummed with the energy of discovery. It was that particular mix of frustration, curiosity, and sudden insight that characterizes both mathematical thinking and software development. Unlike conventional museums, here the abstractions of mathematics took physical form, inviting hands to touch what minds had conceived.
 
-Alex Harlan stood beneath the three-meter bronze lambda sculpture, reflecting on the journey that had brought him here. Lightning from outside briefly illuminated the smooth surface, casting a lambda-shaped shadow across the marble floor. He had always been fascinated by the intersection of mathematics, philosophy, linguistics, technology and literature, and the lambda calculus was a fundamental part of that.
+Alex Harlan stood beneath the three-meter bronze lambda sculpture, reflecting on the journey that had brought him here. Lightning from outside briefly illuminated the smooth surface, casting a lambda-shaped shadow across the marble floor. He had always been fascinated by the intersection of mathematics, philosophy, linguistics, technology and literature, and the the lambda calculus was a fundamental part of that.
 
 The sculpture itself was impressive, a perfect representation of the Greek letter `λ`, cast in bronze with a warm patina that made it look both ancient and timeless. The base contained engravings of some of Church's original lambda calculus expressions, including the identity function that had started it all. A small plaque credited a joint commission between the Mathematikum and several computer science departments across Germany.
 
@@ -71,9 +71,9 @@ Alex had spent nearly two hours walking through the exhibit, reading every plaqu
 
 The exhibit culminated in speculation about the future of computation, quantum computing, biological computing, and other frontiers. But it was here, to the lambda, that Alex kept returning. The beginning. The foundation. The identity function that had started it all.
 
-Alex recalled his first introduction to computer programming, an experience that changed his life forever. It was a FORTRAN computer programming class where he used the arduously slow process of punch cards, and a mainframe computer. At the time, he was a Mechanical Engineering student at the California State Polytechnic University near Los Angles. For his senior project he used a 1979 Hewlett-Packard desktop computer with a BASIC computer program interpreter, and a four-color pen plotter. The program had modeled two dimensional isotherms for heat transfer scenario. 
+Alex recalled his first introduction to computer programming, an experience that changed his life forever. It was a FORTRAN computer programming class where he used the arduously slow process of punch cards, and a mainframe computer. At the time, he was a Mechanical Engineering student at the California State Polytechnic University near Los Angles. For his senior project he used a 1979 Hewlett-Packard desktop computer with a BASIC computer program interpreter, and a four-color pen plotter. The program had modeled two dimensional isotherms for a heat transfer scenario. 
 
-It suddenly dawned on Alex that this was his first encounter with interactive Read-Evaluate-Print-Loop (REPL) programming. What an experience it had been.  Instead of waiting hours, or even days, to get results from the mainframe computer, now he got feedback on his program in seconds. The experience had taught him that programming wasn't just about writing code; it was about conversation. Computer and programmer engaged in an ongoing dialog, each response informing the next bit of entry. That  had been a literal reminder that interfaces had consequences.
+It suddenly dawned on Alex that this had been his first encounter with interactive Read-Evaluate-Print-Loop (REPL) programming. What an experience it had been.  Instead of waiting hours, or even days, to get results from the mainframe computer, now he got feedback on his program in seconds. The experience had taught him that programming wasn't just about writing code; it was about conversation. Computer and programmer engaged in an ongoing dialog, each response informing the next bit of entry. That  had been a literal reminder that interfaces had consequences.
 
 Seventy years old now. Faded navy flannel shirt with sleeves rolled once, the same way he'd worn them since 1979. A silver cross on a thin chain, hidden beneath his shirt, that had survived three decades of conference lanyards. He could see his reflection in the polished metal of the sculpture: silver hair in a practical ponytail, time-earned lines around his eyes, the faint smile of someone who'd spent most of his life trying to explain complex ideas to people who weren't ready for them.
 
